@@ -1,0 +1,15 @@
+@keyframes topBottom {
+    from {
+        //transform: translateY(-3px);
+        transform: scale(1);
+    }
+    50% {
+        //transform: translateY(6px);
+        transform: scale(1.05);
+    }
+    to {
+        //transform: translateY(-3px);
+        transform: scale(1);
+    }
+}
+

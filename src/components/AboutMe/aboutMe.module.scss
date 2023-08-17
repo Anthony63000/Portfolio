@@ -1,0 +1,177 @@
+
+@import "../../assets/styles/animation";
+@import "../../assets/styles/mixin";
+
+.container {
+    display: flex;
+    border-bottom: 2px solid rgba(128,128,128, 0.1);
+
+    @include S {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .left {
+        width: 55%;
+        padding: 50px;
+
+        @include S {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        @include XS {
+            width: 100%;
+        }
+
+        .leftTitle {
+            margin: 0;
+            font-size: 25px;
+            color: #5138BC;
+            text-transform: uppercase;
+
+            @include XS {
+                font-size: 20px;
+            }
+        }
+
+        .leftAfterTitle {
+            font-size: 22px;
+            margin: 5px 0 0 0;
+
+            @include XS {
+                font-size: 18px;
+            }
+        }
+
+        .leftText {
+            font-size: 18px;
+            margin: 15px 0 0 0;
+
+            @include S {
+                text-align: center;
+            }
+
+            @include XS {
+                font-size: 16px;
+            }
+        }
+
+        .leftAltText {
+            font-size: 18px;
+            margin: 0;
+
+            @include S {
+                text-align: center;
+            }
+
+            @include XS {
+                font-size: 16px;
+            }
+        }
+
+        .aboutSkillsContainer {
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 6px;
+
+            .skillsContainer {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                .check {
+                    color: green;
+
+                }
+
+                .skills {
+                    font-size: 18px;
+                    margin: 0;
+                    
+                    @include XS {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        
+        .leftLinkContainer {
+            margin-top: 40px;
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            border-radius: 10px;
+            background-color: #5138BC;
+            box-sizing: border-box;
+            cursor: pointer;
+            animation: topBottom 2s ease-in-out infinite forwards;
+            transform-origin: center;
+
+            @include M {
+                margin-top: 20px;
+            }
+
+            @include S {
+                margin-top: 20px;
+            }
+            
+            &:hover {
+                animation-play-state: paused;
+            }
+
+        }
+
+            .leftLink {
+                font-size: 12px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: white;
+                letter-spacing: 3px;
+                box-sizing: border-box;
+                font-weight: 700;
+
+                @include S {
+                    font-size: 8px;
+                }
+        }
+    }
+
+    .right {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include M {
+            width: 25%;
+            margin: 25px 0 0 0;
+        }
+
+        @include S {
+            width: 100%;
+        }
+
+        .image {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+
+            @include XS {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}

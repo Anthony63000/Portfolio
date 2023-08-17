@@ -1,0 +1,204 @@
+
+
+@import "../../assets/styles/animation";
+@import "../../assets/styles/mixin";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-bottom: 2px solid rgba(128,128,128, 0.1);
+
+    @include S {
+        padding: 20px;
+    }
+
+    .top {
+
+        .title {
+            margin: 0;
+            font-size: 25px;
+            color: #5138BC;
+            text-transform: uppercase;
+
+            @include XS {
+                font-size: 20px;
+            }
+        }
+
+        .textTitle {
+            margin: 5px 0 0 0;
+            font-size: 22px;
+
+            @include XS {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .middle {
+
+        display: flex;
+        margin-top: 35px;
+        border: 1px solid rgba(128,128,128, 0.1);
+
+        @include M {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 50px;
+        }
+
+        @include S {
+            padding: 20px;
+        }
+
+        .left {
+            width: 50%;
+            padding: 25px 100px;
+
+            @include M {
+                width: 100%;
+            }
+
+            @include XS {
+                height: fit-content;
+            }
+
+            .image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                border: 1px solid rgba(128,128,128, 0.1);
+                height: 300px;
+                margin: 45px;
+                padding: 10px 0;
+                object-fit: contain;
+                border-radius: 5px;
+                opacity: 0;
+                transition: opacity 2s ease-in-out;
+
+                @include M {
+                    width: 100%;
+                    object-fit: cover;
+                    margin: auto;
+                }
+
+                @include S {
+                    object-fit: contain;
+                }
+
+                @include XS {
+                    left: 30px;
+                    width: 80%;
+                    height: fit-content;
+                }
+
+            }
+            .activeImage {
+                opacity: 1;
+            }
+        }
+
+        .imageContainer {
+            position: relative;
+            width: 50%;
+            height: 350px; 
+
+            @include XS {
+                height: 180px;
+            }
+        }
+        .right {
+
+            width: 50%;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            @include M {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            @include XS {
+                margin-top: 50px;
+            }
+
+            .techContainer {
+
+                display: flex;
+                gap: 10px;
+
+                .technos:first-child {
+                    color: #4FDAFB ;
+                }
+
+                .technos:last-child {
+                    color: #CD6799;
+                }
+            }
+
+            .titleProject {
+                margin: 40px 0 0 0;
+                color: #5138BC;
+                font-size: 20px;
+                text-transform: uppercase;
+
+                @include XS {
+                    font-size: 18px;
+                }
+            }
+
+            .textProject {
+                margin: 25px 0 0 0;
+                font-size: 18px;
+
+                @include XS {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+
+        margin-top: 50px;
+
+        @include XS {
+            margin-top: 25px;
+        }
+
+        .linkContainer {
+            display: flex;
+            justify-content: center;
+           
+            .link { 
+                border: 1px solid;
+                padding: 15px 20px;
+                border-radius: 10px;
+                background-color: #5138BC;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 3px;
+                font-size: 12px;
+                animation: topBottom 2s ease-in-out infinite forwards;
+                transform-origin: center;
+
+                @include S {
+                    font-size: 8px;
+                }
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+}

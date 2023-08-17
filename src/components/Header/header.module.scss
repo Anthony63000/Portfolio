@@ -1,0 +1,196 @@
+
+@import "../../assets/styles/mixin";
+
+    .container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        max-width: 1400px;
+        background-color: white;
+        z-index: 9999;
+        box-sizing: border-box;
+        width: 100%;
+
+        @include XL {
+            padding: 0 20px;
+        }
+
+        .containerLogo {
+
+            .logo {
+                object-fit: contain;
+                height: 100%;
+                width: 60px;
+            }
+        }
+        .navigation {
+
+            display: flex;
+            justify-content: space-between;
+            gap: 0px;
+            box-sizing: border-box;
+            width: 50%;
+
+            @include S {
+                display: none;
+            }
+
+            .ulList {
+
+                display: flex;
+                justify-content: center;
+                padding: 0;
+                box-sizing: border-box;
+                width: fit-content;
+
+                .liList {
+
+                    list-style-type: none;
+                    box-sizing: border-box;
+
+                    .link {
+                        color: black;
+                        position: relative;
+                        text-decoration: none;
+                        font-size: 18px;
+                        transition: all 250ms ease-in-out;
+                        box-sizing: border-box;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: #5138BC;
+                        }
+                    }
+                    .activeLink {
+                        color: #5138BC;
+                        text-decoration: none;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .containerGithub {
+
+            @include S {
+                display: none;
+            }
+
+            .linkGithub {
+                text-decoration: none;
+                color: inherit;
+
+                .gitIcon {
+
+                    transition: all 250ms ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        color: #5138BC;
+                    }
+                }
+            }
+        }
+
+        .burger {
+            display: none;
+
+            @include S {
+                display: flex;
+            }
+        } 
+
+        .modal {
+            position: fixed;
+            z-index: 9999;
+            right: 0;
+            top: 0;
+            width: 320px;
+            height: 100%;
+            background-color: black;
+            color: white;
+            
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                padding: 10px 20px;
+
+                .navigationTilte {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+
+                i {
+                    color: white;
+                }
+                
+            }
+
+            .contentContainer {
+
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                & .navigation {
+                    margin-top: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .ulList {
+                        width: 45%;
+                        border: 1px solid;
+                        padding: 40px;
+                        border-style: dotted;
+                        margin: 0;
+                    }
+                        
+                    .link {
+                        color: white;
+                    }
+                }
+            }
+            
+            .network {
+                margin-top: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & .container {
+                    display: flex;
+                    border: none;
+                    background: transparent;
+                    gap: 40px;
+
+                    @include M {
+                        display: flex;
+                    }
+
+                    .link {
+                        color: white;
+                        padding: 40px 0;
+                        border-style: dotted;
+                        width: 134px;
+                        text-align: center;
+
+                        &:hover {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
