@@ -43,7 +43,7 @@ function AboutMe({ imageMeSrc, altTextMe }) {
                 </div>
                 <div className={styles.leftLinkContainer}>
                     <NavLink 
-                        to={"/Compétences"}
+                        to={"/Portfolio/Compétences"}
                         className={styles.leftLink}>
                             En savoir plus
                     </NavLink>

@@ -10,19 +10,19 @@ function NavLinkItems() {
     return (
         <nav className={styles.navigation}>
             <NavLinkItem 
-                link="/"
+                link="/Portfolio/Home"
                 item={<i className={`${logoClass} ${styles.logo}`}></i>}
             />
             <NavLinkItem 
-                link="/Portfolio"
+                link="/Portfolio/Portfolio"
                 item="Portfolio"
             />
             <NavLinkItem 
-                link="/Compétences"
+                link="/Portfolio/Compétences"
                 item="Compétences"
             />
             <NavLinkItem 
-                link="/Contact"
+                link="/Portfolio/Contact"
                 item="Contact"
             />
         </nav>

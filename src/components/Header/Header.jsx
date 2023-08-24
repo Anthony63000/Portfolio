@@ -1,5 +1,4 @@
 import styles from "../Header/header.module.scss"
-import { NavLink } from "react-router-dom"
 import Logo from "../../assets/images/logo-entreprise/logo-entreprise.png"
 
 import { useState } from "react";
@@ -9,12 +8,20 @@ import MyNetwork from "../MyNetwork/MyNetwork";
 
 function Header() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [isFrench, setIsFrench] = useState(true);
 
     const openModal = () => {
         setModalIsOpen(!modalIsOpen)
     }
 
-    const gitHubLogoClass = "fa-brands fa-github fa-2xl";
+    const langage = "Français";
+    const customLanguage = "English";
+
+    const changeTextLang = () => {
+        setIsFrench(!isFrench)
+    }
+
+    const langageClass = "fa-solid fa-language fa-xl";
     const burgerClass = "fa-solid fa-bars fa-xl"
     const closeClass = "fa-solid fa-circle-xmark fa-xl"
 
@@ -28,14 +35,16 @@ function Header() {
                     />
                 </div>
                 <NavLinkItems />
-                <div className={styles.containerGithub}>
-                    <NavLink
-                        className={styles.linkGithub}
-                        to="https://github.com/Anthony63000?tab=repositories"
-                        target="_blank"
-                    >
-                        <i className={`${gitHubLogoClass} ${styles.gitIcon}`}></i>
-                    </NavLink>
+                <div 
+                    className={styles.langageContainer}
+                    onClick={changeTextLang}
+                >
+                        <p 
+                            className={styles.langue}
+                        >
+                            {isFrench ? langage : customLanguage}
+                        </p>
+                        <i className={langageClass}></i>
                 </div>
                 <div 
                     className={styles.burger}

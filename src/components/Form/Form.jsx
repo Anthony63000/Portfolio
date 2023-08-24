@@ -1,40 +1,55 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 import styles from "./form.module.scss"
 
 function Form() {
 
     const [textIsCopied, setTextIsCopied] = useState(false)
+    const [resetTimeout, setResetTimeout] = useState(null);
 
     const email = "anthony.borel02@gmail.com";
-    const clickEmail = "L'email à était copier dans le presse-papier" 
+    const clickEmail = "L'email à était copier dans ton presse-papier" 
 
     const pressPaperClass ="fa-regular fa-clipboard fa-lg";
     const trueClass = "fa-solid fa-check fa-lg";
 
     const textRef = useRef(null);
 
-  const handleButtonClick = () => {
-    if (textRef.current) {
-      const text = textRef.current.textContent;
-      
-      const textArea = document.createElement('textarea');
-      textArea.value = text;
-      document.body.appendChild(textArea);
-      textArea.select();
-      setTextIsCopied(!textIsCopied);
+    const handleButtonClick = () => {
+        if (!textIsCopied) {
+            const textToCopy = email;
+    
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                setTextIsCopied(true);
+                console.log('Adresse e-mail copiée dans le presse-papier:', textToCopy);
+    
+                const timeout = setTimeout(() => {
+                    setTextIsCopied(false);
+                }, 5000); 
+                setResetTimeout(timeout);
+            } catch (err) {
+                console.error('Erreur lors de la copie de l\'adresse e-mail :', err);
+            } finally {
+                document.body.removeChild(textArea);
+            }
+        }
+    };
 
-      try {
-        console.log('Texte copié dans le presse-papier:', text);
-      } catch (err) {
-        console.error('Erreur lors de la copie du texte :', err);
-      } finally {
-        document.body.removeChild(textArea);
-      }
-    }
-  };
+    useEffect(() => {
+        return () => {
+            if (resetTimeout) {
+                clearTimeout(resetTimeout);
+            }
+        };
+    }, [resetTimeout]);
 
     return (
         <div className={styles.container}>
