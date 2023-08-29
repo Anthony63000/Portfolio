@@ -17,19 +17,19 @@ function NavLinkItems() {
     return (
         <nav className={styles.navigation}>
             <NavLinkItem 
-                link="/Portfolio/Home"
+                link="/Portfolio"
                 item={<i className={`${logoClass} ${styles.logo}`}></i>}
             />
             <NavLinkItem 
-                link="/Portfolio/Portfolio"
+                link="/Works"
                 item="Portfolio"
             />
             <NavLinkItem 
-                link="/Portfolio/Compétences"
+                link="/Compétences"
                 item={traduction[language].compétences}
             />
             <NavLinkItem 
-                link="/Portfolio/Contact"
+                link="/Contact"
                 item="Contact"
             />
         </nav>

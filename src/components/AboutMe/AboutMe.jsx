@@ -46,7 +46,7 @@ function AboutMe({ imageMeSrc,
                 </div>
                 <div className={styles.leftLinkContainer}>
                     <NavLink 
-                        to={"/Portfolio/Compétences"}
+                        to={"/Compétences"}
                         className={styles.leftLink}>
                             {link}
                     </NavLink>

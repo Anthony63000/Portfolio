@@ -1,15 +1,15 @@
   {
     "frontProject": [
       {
-        "image":"https://anthony63000.github.io/Portfolio/images/Site/Accueuil.png",
+        "image":"https://Anthony63000.github.io/Portfolio/image/Site/Accueuil.png",
         "altText": "Image de la page d'accueuil du site Kasa2"
       },
       {
-        "image":"https://anthony63000.github.io/Portfolio/images/Site/Apropos.png",
+        "image":"https://Anthony63000.github.io/Portfolio/image/Site/Apropos.png",
         "altText": "Image de la page à propos du site Kasa"
       },
       {
-        "image":"https://anthony63000.github.io/Portfolio/images/Site/carte.png",
+        "image":"https://Anthony63000.github.io/Portfolio/image/Site/carte.png",
         "altText": "Image de la page logement du site Kasa"
       }
     ],

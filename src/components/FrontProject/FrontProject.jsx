@@ -74,7 +74,7 @@ function FrontProject(
             <div className={styles.bottom}>
                 <div className={styles.linkContainer}>
                     <NavLink 
-                        to={"/Portfolio/Portfolio"}
+                        to={"/Works"}
                         className={styles.link}
                     >
                             {link}
