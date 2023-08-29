@@ -21,7 +21,7 @@
         "title": "Booki - Page d'accueil d'une agence de voyage",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en alternance dans une start-up du nom de Booki, l'entreprise voulait développer un site qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. On m'a donc confié la tâche de l'intégration de l'interface du site à partir de la maquette du designer et des spécifications fonctionnelles de ma CTO.",
         "link": "https://anthony63000.github.io/Booki/",
-        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/booki/cover/booki.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.png"
       },
       {
         "id": 2,
@@ -29,7 +29,7 @@
         "title": "OhMyFood - Répertoire de restaurants en ligne",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en tant que développeur junior au sein d'une jeune startup du nom de Ohmyfood. Ma mission était d'intégrer le site grâce aux maquettes du designer et des consignes de mon CTO, ce projet intègre le préprocesseur Sass à la place du Css classique et c'est ici que j'ai mis en oeuvre mes premières animations CSS",
         "link": "https://anthony63000.github.io/Ohmyfood/",
-        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/ohmyfood/cover/ohmyfood.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ohmyfood/cover/ohmyfood.png"
       },
       {
         "id": 3,
@@ -37,7 +37,7 @@
         "title": "Print-it - Page d'accueil d'une imprimerie",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour dynamiser un site statique avec le langage Javascript. Je suis intervenu dans ce projet au niveau de la bannière que j'ai rendue dynamique en intégrant un carrousel avec des images qui défilent.",
         "link": "https://anthony63000.github.io/Print-it/",
-        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/print-it/cover/print-it.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/print-it/cover/print-it.png"
       },
       {
         "id": 4,
@@ -45,7 +45,7 @@
         "title": "Kasa - Application web",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet. J'ai donc intégré l'application complète avec React.",
         "link": "https://anthony63000.github.io/Kasa/",
-        "image": "https://anthony63000.github.io/Portfolio/images/Site/Accueuil.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/Site/Accueuil.png"
       },
       {
         "id": 5,
@@ -53,7 +53,7 @@
         "title": "Nina Cardduci - Optimisation du site",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour l'optimisation de SEO du site de Nina Cardduci, une photographe localisée à Bordeaux. Ici je me suis occupé d'optimiser le site que ce soit en matière de performance mais aussi en matière d'accèssibilité et de SEO. J'ai aussi mis en place des balises méta pour configurer le lien du site sur les réseaux sociaux ainsi que la mise en place de résultat enrichie pour configurer l'affichage du site sur Google.",
         "link": "https://anthony63000.github.io/NinaCarducci/",
-        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/nina/cover/nina.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/nina/cover/nina.png"
       },
       {
         "id": 7,
@@ -61,7 +61,7 @@
         "title": "724 Events - Débugage de l'applicatiion",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un développeur web front-end freelance et je décroche une offre pour réparer le site d'une agence d'événementiels. Dans cette mission je me suis occupé de réparer le site mais aussi d'écrire des tests unitaires ainsi que des tests d'intégration pour veiller au bon fonctionnement du site de bout en bout.",
         "link": "https://github.com/Anthony63000/724Events",
-        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/events/events.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/events/events.png"
       },
       {
         "id": 8,
@@ -69,7 +69,7 @@
         "title": "Riding Cites - Intégration HTML",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
         "link": "https://github.com/Anthony63000/724Events",
-        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/Riding/riding.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/Riding/riding.png"
       }
 
     ]
