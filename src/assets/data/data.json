@@ -35,7 +35,7 @@
         "id": 3,
         "category": "Javascript",
         "title": "Print-it - Page d'accueil d'une imprimerie",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour dynamiser un site statique avec le langage Javascript. Je suis intervenu dans ce projet au niveau de la bannière que j'ai rendue dynamique en intégrant un carrouselle avec des images qui défilent.",
+        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour dynamiser un site statique avec le langage Javascript. Je suis intervenu dans ce projet au niveau de la bannière que j'ai rendue dynamique en intégrant un carrousel avec des images qui défilent.",
         "link": "https://anthony63000.github.io/Print-it/",
         "image": "https://anthony63000.github.io/Portfolio/images/portfolio/print-it/cover/print-it.png"
       },
@@ -43,7 +43,7 @@
         "id": 4,
         "category": "React",
         "title": "Kasa - Application web",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet.",
+        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet. J'ai donc intégré l'application complète avec React.",
         "link": "https://anthony63000.github.io/Kasa/",
         "image": "https://anthony63000.github.io/Portfolio/images/Site/Accueuil.png"
       },
@@ -51,7 +51,7 @@
         "id": 5,
         "category": "Javascript",
         "title": "Nina Cardduci - Optimisation du site",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet.",
+        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour l'optimisation de SEO du site de Nina Cardduci, une photographe localisée à Bordeaux. Ici je me suis occupé d'optimiser le site que ce soit en matière de performance mais aussi en matière d'accèssibilité et de SEO. J'ai aussi mis en place des balises méta pour configurer le lien du site sur les réseaux sociaux ainsi que la mise en place de résultat enrichie pour configurer l'affichage du site sur Google.",
         "link": "https://anthony63000.github.io/NinaCarducci/",
         "image": "https://anthony63000.github.io/Portfolio/images/portfolio/nina/cover/nina.png"
       },
@@ -59,10 +59,19 @@
         "id": 7,
         "category": "React",
         "title": "724 Events - Débugage de l'applicatiion",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet.",
+        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un développeur web front-end freelance et je décroche une offre pour réparer le site d'une agence d'événementiels. Dans cette mission je me suis occupé de réparer le site mais aussi d'écrire des tests unitaires ainsi que des tests d'intégration pour veiller au bon fonctionnement du site de bout en bout.",
         "link": "https://github.com/Anthony63000/724Events",
         "image": "https://anthony63000.github.io/Portfolio/images/portfolio/events/events.png"
+      },
+      {
+        "id": 8,
+        "category": "HTML&CSS",
+        "title": "Riding Cites",
+        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer",
+        "link": "https://github.com/Anthony63000/724Events",
+        "image": "https://anthony63000.github.io/Portfolio/images/portfolio/Riding/riding.png"
       }
+
     ]
 }
   
