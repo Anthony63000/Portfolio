@@ -37,6 +37,14 @@ const traduction = {
         contactMessagePlaceholder : "Ton message",
         contactButtonSubmit : "Envoyer",
         contactOr : "Ou",
+        contactCopy : "L'email à était copier dans ton presse-papier",
+
+        bannerPortfolioTitle : "Mes références",
+        bannerPortfolioSubtitle : "Mon portfolio de développeur Web Front-End",
+        bannerPortfolioText : "Rien de mieux qu'un petit tour de mes projets web",
+
+        filterBarName : "Filtres",
+        filterBarAll : "Tous",
 
     },    
     en : {  
@@ -76,6 +84,13 @@ const traduction = {
         contactButtonSubmit : "Send",
         contactOr : "Or",
 
+        bannerPortfolioTitle : "My References",
+        bannerPortfolioSubtitle : "My Front-End Web Developer Portfolio",
+        bannerPortfolioText : "Nothing better than a little tour of my web projects",
+
+        filterBarName : "Filters",
+        filterBarAll : "All",
+        contactCopy : "The email was copied to your clipboard",
     } 
 }
 

@@ -1,6 +1,10 @@
 import styles from "./filterBar.module.scss"
 
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+
+import { languageContext } from "../Context/ContextLang";
+import traduction from "../../assets/data/traduction";
+
 
 import Filter from "./Filter"
 
@@ -19,6 +23,9 @@ function FilterBar( {onFilterChange} ) {
     const classJavascript = "fa-brands fa-square-js";
     const classReact ="fa-brands fa-react";
 
+    const { language } = useContext(languageContext)
+    const useLanguage = traduction[language]
+
     return (
         <div 
             className={styles.container}
@@ -26,13 +33,13 @@ function FilterBar( {onFilterChange} ) {
             <div 
                 className={styles.filterLogoContainer}
             >
-                <p className={styles.textFilter}>Filtres</p>
+                <p className={styles.textFilter}>{useLanguage.filterBarName}</p>
             </div> 
             <div 
                 className={styles.barContainer}
             >
                 <Filter 
-                    name="Tous"
+                    name={useLanguage.filterBarAll}
                     classLogo={selectedCategory ? 
                     classFolder 
                     : classFolderSelected}

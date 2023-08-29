@@ -89,6 +89,10 @@
                     }
                 }
 
+                .inputOk {
+                    border-color: green;
+                }
+
                 .message {
                     height: 150px;
                 }
@@ -106,6 +110,10 @@
                     border: none;
                     color: white;
                     background-color: rgba(128,128,128, 0.6);
+                }
+
+                .isValid {
+                    background-color: #5138BC;
                 }
             }
 
