@@ -6,7 +6,15 @@ import { useState, useEffect } from "react";
 
 import data from "../../assets/data/data.json"
 
-function FrontProject() {
+function FrontProject(
+    {
+        title,
+        subTitle,
+        titleProject,
+        projectText,
+        link
+    }
+) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -26,11 +34,10 @@ function FrontProject() {
         <div className={styles.container}>
             <div className={styles.top}>
                 <h3 className={styles.title}>
-                    Projet en avant
+                    {title}
                 </h3>
                 <p className={styles.textTitle}>
-                    Consulte mon portfolio et découvre
-                    l'ensemble de mes réalisations
+                    {subTitle}
                 </p>
             </div>
             <div className={styles.middle}>
@@ -57,18 +64,10 @@ function FrontProject() {
                         />
                     </div>
                     <h4 className={styles.titleProject}>
-                        Application Web - Kasa
+                        {titleProject}
                     </h4>
                     <p className={styles.textProject}>
-                        Kasa est une application web qui est 
-                        destinée à des particuliers qui souhaitent
-                        louer un appartement pour leur vacances.
-                        Ce projet est composé d'une page d'accueil 
-                        avec des cartes qui correspondent à des 
-                        locations immobilières. Une fois que 
-                        l'utilisateur accède à un logement, 
-                        il va pouvoir avoir accès aux différentes 
-                        caractéristiques de la location.
+                        {projectText}
                     </p>
                 </div>
             </div>
@@ -78,7 +77,7 @@ function FrontProject() {
                         to={"/Portfolio/Portfolio"}
                         className={styles.link}
                     >
-                            Consulte mon porfolio
+                            {link}
                     </NavLink>
                 </div>
             </div>

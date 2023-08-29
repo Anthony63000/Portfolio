@@ -1,7 +1,7 @@
 
 import styles from "../Banner/banner.module.scss"
 
-function Banner({ bannerImage, altBanner }) {
+function Banner({ bannerImage, altBanner, job }) {
     return (
         <div className={styles.containerBanner}>
             <div className={styles.bannerContent}>
@@ -14,7 +14,7 @@ function Banner({ bannerImage, altBanner }) {
                     Borel Anthony
                 </h2>
                 <p className={styles.job}>
-                    Développeur Web Front-End
+                    {job}
                 </p>
             </div>
         </div>

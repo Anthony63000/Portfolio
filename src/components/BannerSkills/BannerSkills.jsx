@@ -5,20 +5,30 @@ import styles from "./bannerSkills.module.scss";
 
 import skills from "../../assets/images/skills/skills.webp"
 
+import { useContext } from "react";
+
+import { languageContext } from "../Context/ContextLang";
+import traduction from "../../assets/data/traduction";
+
 function BannerSkills() {
+
+    const { language } = useContext(languageContext);
+
+    const useLanguage = traduction[language];
+
     return (
         <div className={styles.container}>
             <h3 className={styles.title}>
-                Compétences techniques
+                {useLanguage.bannerSkillsTitle}
             </h3>
             <p className={styles.subTitle}>
-                Consulte mon CV pour en savoir plus sur mon parcours
+                {useLanguage.bannerSkillsSubtitle}
             </p>
             <a 
                 href="#"
                 className={styles.link}
             >
-                    Consulte mon CV
+                    {useLanguage.bannerSkillsLink}
             </a>
             <img 
                 className={styles.image}

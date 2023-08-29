@@ -2,16 +2,24 @@
 import styles from "./footer.module.scss"
 import { NavLink } from "react-router-dom"
 
+import traduction from "../../assets/data/traduction"
+import { useContext } from "react"
+import { languageContext } from "../Context/ContextLang"
+
 function Footer() {
 
     const gitHubLogoClass = "fa-brands fa-github fa-xl"
     const linkClass = "fa-brands fa-linkedin fa-xl"
 
+    const { language } = useContext(languageContext);
+
+    const useLanguage = traduction[language]; 
+
     return (
         <div className={styles.container}>
             <div className={styles.top}>
                     <p className={styles.topText}>
-                        Retrouvez - moi sur
+                        {useLanguage.footerTitle}
                     </p>
             </div>
             <div className={styles.middle}>
@@ -32,7 +40,7 @@ function Footer() {
             </div>
             <div className={styles.copy}>
                 <p className={styles.copyText}>
-                © 2023 Borel Anthony. Tous droits réservés.
+                    {useLanguage.footerCopy}
                 </p>
             </div>
         </div>

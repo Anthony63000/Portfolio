@@ -4,6 +4,10 @@ import React, { useRef, useState, useEffect } from 'react';
 
 import styles from "./form.module.scss"
 
+import { useContext } from 'react';
+import traduction from '../../assets/data/traduction';
+import { languageContext } from '../Context/ContextLang';
+
 function Form() {
 
     const [textIsCopied, setTextIsCopied] = useState(false)
@@ -51,17 +55,20 @@ function Form() {
         };
     }, [resetTimeout]);
 
+    const { language } = useContext(languageContext);
+    const useLanguage = traduction[language];
+
     return (
         <div className={styles.container}>
             <div className={styles.top}>
                 <h3 className={styles.title}>
-                    Contacte - moi
+                    {useLanguage.contactTitle}
                 </h3>
             </div>
             <div className={styles.bottom}>
                 <div className={styles.right}>
                     <form 
-                        action="https://formspree.io/anthony.borel02@gmail.com"
+                        action="https://formspree.io/f/mpzgdnow"
                         className={styles.form}
                         method="POST"
                     >
@@ -69,13 +76,13 @@ function Form() {
                             htmlFor="name"
                             className={styles.label}
                         >
-                                *Prénom :
+                                {useLanguage.contactPrenom}
                         </label>
                         <input 
                             className={styles.input}
                             type="text" 
                             name="name" 
-                            placeholder="Votre Prénom"
+                            placeholder={useLanguage.contactPrenomplaceholder}
                         />
                         <label 
                             htmlFor="email"
@@ -87,7 +94,7 @@ function Form() {
                             className={styles.input}
                             type="email" 
                             name="email" 
-                            placeholder="Votre Email"
+                            placeholder={useLanguage.contactEmailPlaceholder}
                         />
                         <label 
                             htmlFor="message"
@@ -98,18 +105,18 @@ function Form() {
                         <textarea 
                             className={`${styles.input} ${styles.message}`}
                             name="message"
-                            placeholder="Votre message"
+                            placeholder={useLanguage.contactMessagePlaceholder}
                         >
                         </textarea>
                         <button
                             className={styles.button}
                             type="submit"
                         >
-                            Envoyer
+                            {useLanguage.contactButtonSubmit}
                         </button>
                     </form>
                     <div className={styles.altContainer}>
-                        <p className={styles.altText}>Ou</p>
+                        <p className={styles.altText}>{useLanguage.contactOr}</p>
                         <div 
                             className={`${styles.mailContainer} ${textIsCopied ? 
                             styles.active

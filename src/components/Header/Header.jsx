@@ -1,25 +1,34 @@
 import styles from "../Header/header.module.scss"
 import Logo from "../../assets/images/logo-entreprise/logo-entreprise.png"
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import NavLinkItems from "./NavLinkItems"
 import MyNetwork from "../MyNetwork/MyNetwork";
+import { languageContext } from "../Context/ContextLang";
 
 function Header() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [isFrench, setIsFrench] = useState(true);
+    const [isFrench, setIsFrench] = useState(() => {
+        const storedLanguage = localStorage.getItem('selectedLanguage');
+        return storedLanguage ? storedLanguage === 'fr' : true;
+    });
+
+    const switchLanguageContext = useContext(languageContext);
 
     const openModal = () => {
-        setModalIsOpen(!modalIsOpen)
+        setModalIsOpen(!modalIsOpen);
+    }
+
+    const changeTextLang = () => {
+        const newLanguage = isFrench ? 'en' : 'fr';
+        switchLanguageContext.switchLanguage(newLanguage);
+        setIsFrench(!isFrench);
+        localStorage.setItem('selectedLanguage', newLanguage);
     }
 
     const langage = "Français";
     const customLanguage = "English";
-
-    const changeTextLang = () => {
-        setIsFrench(!isFrench)
-    }
 
     const langageClass = "fa-solid fa-language fa-xl";
     const burgerClass = "fa-solid fa-bars fa-xl"
