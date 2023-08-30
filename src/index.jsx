@@ -8,17 +8,19 @@ import Skills from './page/Skills';
 import Contact from './page/Contact';
 
 import LanguageContextProvider from './components/Context/ContextLang';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <LanguageContextProvider>
     <React.StrictMode>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/Portfolio" element={<Home />}/>
-          <Route path="/Works" element={<Portfolio />}/>
-          <Route path='/Compétences' element={<Skills />}/>
-          <Route path='/Contact' element={<Contact />}/>
+          <Route path="/Works" element={<Portfolio key="portfolio"/>}/>
+          <Route path='/Compétences' element={<Skills key="skills"/>}/>
+          <Route path='/Contact' element={<Contact key="contact"/>}/>
         </Routes>
       </Router>
     </React.StrictMode>

@@ -12,6 +12,7 @@ import Me from "../assets/images/Moi/moi 2 .jpg"
 import { useContext } from "react";
 import traduction from "../assets/data/traduction";
 import { languageContext } from "../components/Context/ContextLang";
+import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
 
 function Home() {
 
@@ -44,6 +45,7 @@ function Home() {
           link={traduction[language].frontProjectLink}
         />
       </main>
+      <ScrollTopButton />
       <footer>
           <Footer />
       </footer>

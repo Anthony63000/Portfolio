@@ -5,6 +5,7 @@ import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import BannerPortfolio from "../components/BannerPortfolio/BannerPorfolio"
 import MainPortfolio from "../components/MainPortfolio/MainPortFolio"
+import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton"
 
 function Portfolio() {
     return (
@@ -16,6 +17,7 @@ function Portfolio() {
                 <BannerPortfolio />
                 <MainPortfolio />
             </main>
+                <ScrollTopButton />
             <footer>
                 <Footer />
             </footer>

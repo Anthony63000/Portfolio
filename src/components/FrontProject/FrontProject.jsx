@@ -60,7 +60,7 @@ function FrontProject(
                         />
                         <Techno 
                             techno="fa-brands fa-sass fa-2xl"
-                            color="#CD6799;"
+                            color="#CD6799"
                         />
                     </div>
                     <h4 className={styles.titleProject}>

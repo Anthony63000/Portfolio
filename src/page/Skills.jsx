@@ -3,7 +3,8 @@ import styles from "../assets/styles/global.module.scss";
 import Header from "../components/Header/Header";
 import BannerSkills from "../components/BannerSkills/BannerSkills";
 import Stacks from "../components/Stacks/Stacks";
-import Footer from "../components/Footer/Footer"
+import Footer from "../components/Footer/Footer";
+import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
 
 function Skills() {
     return (
@@ -15,6 +16,7 @@ function Skills() {
                 <BannerSkills />
                 <Stacks />
             </main>
+                <ScrollTopButton />
             <footer>
                 <Footer />
             </footer>
