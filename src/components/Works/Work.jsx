@@ -1,14 +1,12 @@
 
 import styles from "./work.module.scss"
 
-import { NavLink } from "react-router-dom";
 
 function Work({ 
     imageProjectSrc, 
     altImage,
     title,
-    text,
-    link
+    text
 }) {
     return (
         <div className={styles.container}>
@@ -29,15 +27,6 @@ function Work({
                     <p className={styles.text}>
                         {text}
                     </p>
-                </div>
-                <div className={styles.linkContainer}>
-                    <NavLink
-                        className={styles.link}
-                        target="_blank"
-                        to={link}
-                    >
-                        Consulter
-                    </NavLink>
                 </div>
             </div>    
         </div>

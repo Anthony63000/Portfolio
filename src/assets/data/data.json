@@ -21,7 +21,8 @@
         "title": "Booki - Page d'accueil d'une agence de voyage",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en alternance dans une start-up du nom de Booki, l'entreprise voulait développer un site qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. On m'a donc confié la tâche de l'intégration de l'interface du site à partir de la maquette du designer et des spécifications fonctionnelles de ma CTO.",
         "link": "https://anthony63000.github.io/Booki/",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.png"
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.png",
+        "logo": "https://anthony63000.github.io/Portfolio/image/logo/booki.png"
       },
       {
         "id": 2,

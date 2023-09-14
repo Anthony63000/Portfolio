@@ -9,6 +9,7 @@ import Contact from './page/Contact';
 
 import LanguageContextProvider from './components/Context/ContextLang';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import FocusWorks from './page/FocusWorks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Routes>
           <Route path="/Portfolio" element={<Home />}/>
           <Route path="/Works" element={<Portfolio key="portfolio"/>}/>
+          <Route path='/Works/:id' element={<FocusWorks />}/>
           <Route path='/Compétences' element={<Skills key="skills"/>}/>
           <Route path='/Contact' element={<Contact key="contact"/>}/>
         </Routes>

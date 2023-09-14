@@ -6,6 +6,7 @@ import FilterBar from "../FilterBar/FilterBar"
 import Work from "../Works/Work"
 
 import data from "../../assets/data/data.json";
+import { Link } from "react-router-dom";
 
 function MainPortfolio() {
 
@@ -56,15 +57,20 @@ function MainPortfolio() {
             </div>
             <div className={`${styles.right} ${!isFixed ? styles.rightBis : ""}`}>
                 {filteredProject.map((project, index) => (
-                    <Work 
-                        key={index}
-                        title={project.title}
-                        text={project.description}
-                        link={project.link}
-                        imageProjectSrc={project.image}
-                        logoProjectSrc={project.logo}
-                    />
-                ))}
+                    <Link 
+                    to={`${project.id}`}
+                    className={styles.linkProject}
+                    >
+                        <Work 
+                            key={index}
+                            title={project.title}
+                            text={project.description}
+                            link={project.link}
+                            imageProjectSrc={project.image}
+                            logoProjectSrc={project.logo}
+                        />
+                    </Link> 
+                ))}   
             </div>
         </div>
     )
