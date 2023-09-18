@@ -1,0 +1,52 @@
+.container {
+    width: 65%;
+    padding: 20px 20px 0 20px;
+    border-right: 2px solid rgba(128,128,128, 0.1);
+    border-top: 2px solid rgba(128,128,128, 0.1);
+    border-bottom: 2px solid rgba(128,128,128, 0.1);
+
+    .title {
+        color: #5138BC;
+        margin: 0;
+    }
+
+    .descriptionContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        .detail {
+            border-bottom: 2px solid rgba(128,128,128, 0.1);
+            padding: 10px 24px;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: #5138BC;
+        }
+
+        .row {
+            display: flex;
+            padding: 20px 24px;
+            border-bottom: 2px solid rgba(128,128,128, 0.1);
+
+            &:last-child {
+                border: none;
+            }
+
+            .featureTitle {
+                width: 30%;
+                margin: 0;
+                font-weight: 600;
+                font-size: 18px;
+                
+            }
+
+            .description {
+                width: 70%;
+                margin: 0;
+                border-left: 2px solid rgba(128,128,128, 0.1);
+                padding-left: 50px;
+            }
+        }
+    }
+}
