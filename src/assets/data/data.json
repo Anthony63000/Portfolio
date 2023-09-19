@@ -181,8 +181,30 @@
           "htmlClass",
           "cssClass"
         ]
+      },
+      {
+        "id": 8,
+        "category": "React",
+        "theme": "Intégration Web",
+        "nature": "Projet Openclassrooms",
+        "date": "Spetembre 2023",
+        "title": "Argent-Bank - Application bancaire",
+        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
+        "link": "https://github.com/Anthony63000/Argent-Bank",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/argent-bank/argentbank.png",
+        "logo":"https://anthony63000.github.io/Portfolio/image/logo/argent.png",
+        "stacks": [
+          "React", "SASS"
+       ],
+       "stackLogo": [
+        "fa-brands fa-react fa-2xl",
+        "fa-brands fa-sass fa-2xl"
+      ],
+        "workLogoId": [
+          "reactClass",
+          "sassClass"
+        ]
       }
-
     ]
 }
   

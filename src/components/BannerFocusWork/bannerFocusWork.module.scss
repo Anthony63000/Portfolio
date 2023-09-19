@@ -1,3 +1,5 @@
+@import "../../assets/styles/mixin";
+
 .container {
     margin-top: 54px;
     display: flex;
@@ -7,9 +9,13 @@
     position: relative;
     border-top: 2px solid rgba(128,128,128, 0.1);
 
+    @include S {
+        height: 175px;
+    }
+
     .image {
-        height: 30%;
-        width: 10%;
+        height: 50px;
+        width: 125px;
     }
 
     .containerButtons {
@@ -19,6 +25,10 @@
         width: 80%;
         display: flex;
         justify-content: space-between;
+
+        @include XS {
+            top: 55%;
+        }
     
         .containerButton {
             display: flex;
@@ -40,6 +50,10 @@
             text-decoration: none;
             color: black;
             margin: 0;
+
+            @include XS {
+                font-size: 14px;
+            }
         }
     }    
 }

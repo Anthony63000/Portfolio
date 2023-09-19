@@ -1,3 +1,5 @@
+@import "../../assets/styles/mixin";
+
 .container {
     width: 65%;
     padding: 20px 20px 0 20px;
@@ -5,9 +7,24 @@
     border-top: 2px solid rgba(128,128,128, 0.1);
     border-bottom: 2px solid rgba(128,128,128, 0.1);
 
+    @include M {
+        width: 100%;
+        padding: 20px 0;
+    }
+
     .title {
         color: #5138BC;
         margin: 0;
+        margin-left: 20px;
+
+        @include M {
+            text-align: center;
+            margin: 0;
+        }
+
+        @include XS {
+            font-size: 18px;
+        }
     }
 
     .descriptionContainer {
@@ -22,6 +39,10 @@
             font-size: 20px;
             font-weight: 600;
             color: #5138BC;
+
+            @include XS {
+                font-size: 18px;
+            }
         }
 
         .row {
@@ -38,6 +59,10 @@
                 margin: 0;
                 font-weight: 600;
                 font-size: 18px;
+
+                @include XS {
+                    font-size: 16px;
+                }
                 
             }
 
@@ -46,6 +71,16 @@
                 margin: 0;
                 border-left: 2px solid rgba(128,128,128, 0.1);
                 padding-left: 50px;
+                color: black;
+                white-space: wrap;
+
+                @include XS {
+                    font-size: 14px;
+                    word-wrap: break-word;
+                    padding-left: 10px;
+                    width: 70%;
+                    text-align: center;
+                }
             }
         }
     }

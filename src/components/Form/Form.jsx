@@ -85,6 +85,9 @@ function Form() {
                 <h3 className={styles.title}>
                     {useLanguage.contactTitle}
                 </h3>
+                <p className={styles.subtitle}>
+                    Si tu souhaite me contacter, c'est ici que ça se passe
+                </p>
             </div>
             <div className={styles.bottom}>
                 <div className={styles.right}>

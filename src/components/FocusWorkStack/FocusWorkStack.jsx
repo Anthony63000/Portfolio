@@ -7,11 +7,10 @@ function FocusWorkStack({ workSelected, workLogo, workLogoColor }) {
     return (
         <div className={styles.container}>
             <div className={styles.stacks}>
-                <div className={styles.top}>
                     <p className={styles.title}>
                         Stack technique
                     </p>
-                </div>
+                <div className={styles.top}>
                 {workSelected.stacks.map((work, index) => (
                     <div
                         className={styles.stackContainer}
@@ -26,6 +25,7 @@ function FocusWorkStack({ workSelected, workLogo, workLogoColor }) {
                         </p>
                     </div>
                 ))}
+                </div>
             </div>
         </div>
     );

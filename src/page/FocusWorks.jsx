@@ -43,7 +43,7 @@ function FocusWorks() {
                     workLogoColor={workSelected.workLogoId}
                 />
             </div>
-                <PrevOrNextProject />
+            <PrevOrNextProject />
             <Footer />
         </div>
     )

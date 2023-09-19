@@ -1,3 +1,5 @@
+@import "../../assets/styles/mixin";
+
 .container {
     width: 35%;
     padding: 20px;
@@ -8,17 +10,52 @@
     margin-left: 50px;
     border: 2px solid rgba(128,128,128, 0.1);
 
+    @include M {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-top: none;
+    }
+
     .title {
         font-size: 20px;
         color: #5138BC;
         font-weight: 700;
+
+        @include M {
+            margin-left: 20px;
+            margin-right: 50px;
+        }
+
+        @include XS {
+            font-size: 16px;
+        }
     }
 
     .stacks {
-
-        border: 1px solid;
         padding: 50px;
         border: 2px solid rgba(128,128,128, 0.1);
+        
+        @include M {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            border: none;
+            width: 100%;
+
+            .top {
+
+                @include M {
+                    display: flex;
+                }
+
+                @include XS {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+            }
+        }
 
         .stackContainer {
             display: flex;
@@ -27,9 +64,27 @@
             padding: 20px;
             border-bottom: 2px solid rgba(128,128,128, 0.1);
 
+            @include M {
+                border: none;
+                padding-top: 50px;
+                padding: 25px 10px 10px 10px;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @include XS {
+                flex-direction: column;
+            }
+
             .stackText {
                 font-size: 18px;
                 font-weight: 600;
+
+                @include XS {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
             }
     
         }
