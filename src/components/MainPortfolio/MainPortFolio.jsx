@@ -64,7 +64,7 @@ function MainPortfolio() {
                         <Work 
                             key={index}
                             title={project.title}
-                            text={project.description}
+                            text={project.resume}
                             link={project.link}
                             imageProjectSrc={project.image}
                             logoProjectSrc={project.logo}
