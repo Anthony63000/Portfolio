@@ -176,9 +176,10 @@
         .linkContainer {
             display: flex;
             justify-content: center;
+            
            
             .link { 
-                border: 1px solid;
+                border: none;
                 padding: 15px 20px;
                 border-radius: 10px;
                 background-color: #5138BC;
@@ -188,15 +189,15 @@
                 font-weight: 700;
                 letter-spacing: 3px;
                 font-size: 12px;
-                animation: topBottom 2s ease-in-out infinite forwards;
-                transform-origin: center;
+                box-shadow:  1px 2px 4px black;
+                transition: all 250ms ease-in-out;
 
                 @include S {
                     font-size: 8px;
                 }
 
                 &:hover {
-                    animation-play-state: paused;
+                    transform: scale(1.05);
                 }
             }
         }

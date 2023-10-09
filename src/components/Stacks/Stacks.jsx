@@ -1,62 +1,53 @@
-
 import Stack from "./Stack";
-import styles from "./stack.module.scss";
+import styles from "./stacks.module.scss";
 
-import { useContext } from "react";
+import HtmlLogo from "../../assets/images/skills/html-1.svg";
+import CssLogo from "../../assets/images/skills/css-3.svg";
+import SassLogo from "../../assets/images/skills/sass-1.svg";
+import JavaScriptLogo from "../../assets/images/skills/logo-javascript.svg";
+import ReactLogo from "../../assets/images/skills/react-2.svg";
+import ReduxLogo from "../../assets/images/skills/redux-logo.svg";
+import NodeLogo from "../../assets/images/skills/nodejs-1.svg";
+import MongoLogo from "../../assets/images/skills/mongodb-icon-2.svg";
+import FirebaseLogo from "../../assets/images/skills/firebase-1.svg";
 
-import traduction from "../../assets/data/traduction"; 
-import { languageContext } from "../Context/ContextLang";
 
 function Stacks() {
-
-    const htmlClass = "fa-brands fa-html5 fa-2xl"
-    const cssClass = "fa-brands fa-css3-alt fa-2xl"
-    const sassClass = "fa-brands fa-sass fa-2xl"
-    const javascriptClass = "fa-brands fa-js fa-2xl"
-    const reactClass = "fa-brands fa-react fa-2xl"
-
-    const { language } = useContext(languageContext);
-    const useLanguage = traduction[language]
-
-    return (
+    return(
         <div className={styles.container}>
             <div className={styles.top}>
                 <h3 className={styles.title}>
-                    {useLanguage.stackTitle}
+                   Ma stack de développeur Front-End
                 </h3>
                 <p className={styles.subTitle}>
-                    {useLanguage.stackSubtitle}
+                    Zoom sur mes compétences
                 </p>
             </div>
             <div className={styles.bottom}>
                 <Stack 
-                    stack="Html"
-                    stackClass={htmlClass}
-                    id={styles.html}
+                    title="Intégration Web"
+                    image1={HtmlLogo}
+                    image2={CssLogo}
+                    image3={SassLogo}
+                    description="L'intégration web est l'art de donner vie à une vision artistique à travers le code. HTML, le squelette de la page, définit la structure, CSS, la couche stylisée, ajoute la beauté, tandis que Sass, le préprocesseur CSS, offre des fonctionnalités avancées pour rendre le style plus flexible et maintenable. Ensemble, ces langages forment l'épine dorsale de l'expérience utilisateur sur le web, créant des sites interactifs et visuellement captivants."
                 />
                 <Stack 
-                    stack="Css"
-                    stackClass={cssClass}
-                    id={styles.css}
+                    title="Front-End"
+                    image1={JavaScriptLogo}
+                    image2={ReactLogo}
+                    image3={ReduxLogo}
+                    description="Dans le monde du développement web, JavaScript est le moteur qui alimente l'interactivité, React, la bibliothèque front-end, apporte la facilité et la réactivité dans la construction des interfaces utilisateur, tandis que Redux, un gestionnaire d'état prévisible, assure une gestion efficace des données à travers toute l'application. Ensemble, ces technologies forment une trinité puissante, offrant des expériences utilisateur dynamiques et des applications web robustes"
                 />
                 <Stack 
-                    stack="Sass"
-                    stackClass={sassClass}
-                    id={styles.sass}
-                />
-                <Stack 
-                    stack="JavaScript"
-                    stackClass={javascriptClass}
-                    id={styles.javascript}
-                />
-                <Stack 
-                    stack="React"
-                    stackClass={reactClass}
-                    id={styles.react}
+                    title="Back-End"
+                    image1={NodeLogo}
+                    image2={MongoLogo}
+                    image3={FirebaseLogo}
+                    description="Dans l'écosystème du développement web, Node.js sert de fondation robuste côté serveur, permettant l'exécution de JavaScript côté serveur. Firebase, avec ses services cloud, offre une plateforme complète pour le développement rapide d'applications web et mobiles, tandis que MongoDB, une base de données NoSQL, assure une gestion flexible et évolutive des données. Ensemble, Node.js, Firebase et MongoDB forment une synergie puissante, facilitant la création d'applications web modernes, agiles et extensibles (En cours d'apprentissage)"
                 />
             </div>
         </div>
     )
 }
 
-export default Stacks 
+export default Stacks

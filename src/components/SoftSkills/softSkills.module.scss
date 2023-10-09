@@ -1,0 +1,71 @@
+.container {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-top: 2px solid rgba(128,128,128, 0.1);
+    padding: 50px 0;
+    border-bottom: 2px solid rgba(128,128,128, 0.1);
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+
+        .title {
+            margin: 0;
+            font-size: 22px;
+            color: #5138BC;
+            text-transform: uppercase;
+        }
+
+        .subTitle {
+            margin: 0;
+            font-size: 22px;
+        }
+    }
+
+    .contentContainer {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .softContainer {
+            border: 2px solid rgba(128,128,128, 0.1);
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            word-wrap: break-word;
+            transition: all 250ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .titleCard {
+                margin: 0;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 20px;
+                color: #5138BC;
+                margin-top: 10px;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #5138BC;
+                width: fit-content;
+            }
+
+            .cardImage {
+                object-fit: contain;
+                margin-top: 20px;
+                height: 177px;
+            }
+
+            .cardDescription {
+                margin: 0;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

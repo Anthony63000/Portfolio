@@ -2,9 +2,10 @@
 import styles from "../assets/styles/global.module.scss";
 import Header from "../components/Header/Header";
 import BannerSkills from "../components/BannerSkills/BannerSkills";
-import Stacks from "../components/Stacks/Stacks";
 import Footer from "../components/Footer/Footer";
 import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
+import SoftSkills from "../components/SoftSkills/SoftSkills";
+import Stacks from "../components/Stacks/Stacks";
 
 function Skills() {
     return (
@@ -14,7 +15,8 @@ function Skills() {
             </header>
             <main>
                 <BannerSkills />
-                <Stacks />
+                <Stacks/>
+                <SoftSkills />
             </main>
                 <ScrollTopButton />
             <footer>
