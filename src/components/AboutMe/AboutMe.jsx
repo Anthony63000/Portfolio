@@ -2,7 +2,6 @@
 import styles from "../AboutMe/aboutMe.module.scss"
 import { NavLink } from "react-router-dom"
 
-import AboutMeSkills from "./AboutMeSkills"
 
 function AboutMe({ imageMeSrc, 
     altTextMe, 
@@ -27,23 +26,6 @@ function AboutMe({ imageMeSrc,
                 <p className={styles.leftAltText}>
                     {altText}
                 </p>
-                <div className={styles.aboutSkillsContainer}>
-                    <AboutMeSkills
-                        skill="Html"
-                    />
-                    <AboutMeSkills 
-                        skill="Css"
-                    />
-                    <AboutMeSkills 
-                        skill="Sass"
-                    />
-                    <AboutMeSkills 
-                        skill="JavaScript"
-                    />
-                    <AboutMeSkills 
-                        skill="React"
-                    />
-                </div>
                 <div className={styles.leftLinkContainer}>
                     <NavLink 
                         to={"/Compétences"}

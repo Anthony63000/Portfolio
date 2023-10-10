@@ -1,8 +1,8 @@
 .container {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 25px;
     border-top: 2px solid rgba(128,128,128, 0.1);
-    padding: 50px 0;
+    padding: 50px 50px;
     border-bottom: 2px solid rgba(128,128,128, 0.1);
 
     .top {
@@ -16,6 +16,9 @@
             font-size: 22px;
             color: #5138BC;
             text-transform: uppercase;
+            border-bottom: 3px solid;
+            width: fit-content;
+            padding-bottom: 2px;
         }
 
         .subTitle {
@@ -31,7 +34,7 @@
         width: 100%;
 
         .softContainer {
-            border: 2px solid rgba(128,128,128, 0.1);
+            box-shadow: 2px 2px 2px 3px rgba(128,128,128, 0.1);
             width: 22%;
             display: flex;
             flex-direction: column;
@@ -41,6 +44,7 @@
 
             &:hover {
                 transform: scale(1.1);
+                background-color: rgba($color: #f5f5dc, $alpha: 0.3);
             }
 
             .titleCard {
@@ -59,6 +63,8 @@
                 object-fit: contain;
                 margin-top: 20px;
                 height: 177px;
+                width: 90%;
+                padding: 0 20px;
             }
 
             .cardDescription {

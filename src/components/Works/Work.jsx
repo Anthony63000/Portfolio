@@ -6,7 +6,8 @@ function Work({
     imageProjectSrc, 
     altImage,
     title,
-    text
+    type,
+    date
 }) {
     return (
         <div className={styles.container}>
@@ -16,19 +17,18 @@ function Work({
                     src={imageProjectSrc} 
                     alt={altImage}
                 />
-            </div>
-            <div className={styles.contentContainer}>
-                <div className={styles.titleContainer}>
+                <div className={styles.absolute}>
                     <h3 className={styles.title}>
-                        {title}
+                            {title}
                     </h3>
-                </div>
-                <div className={styles.textContainer}>
-                    <p className={styles.text}>
-                        {text}
+                    <p className={styles.type}>
+                        {type}
+                    </p>
+                    <p className={styles.date}>
+                        {date}
                     </p>
                 </div>
-            </div>    
+            </div>   
         </div>
     )
 }

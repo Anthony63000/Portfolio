@@ -22,6 +22,9 @@
         text-transform: uppercase;
         color: #5138BC;
         font-weight: 700;
+        border-bottom: 3px solid;
+        padding-bottom: 3px;
+        width: fit-content;
 
         @include XS {
             font-size: 18px;
@@ -32,7 +35,7 @@
     .subTitle {
         margin: 0;
         font-size: 24px;
-        margin-top: 5px;
+        margin-top: 25px;
 
         @include S {
             text-align: center;

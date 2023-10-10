@@ -1,3 +1,5 @@
+/* eslint-disable no-lone-blocks */
+/* eslint-disable jsx-a11y/img-redundant-alt */
 
 import styles from "./mainPortfolio.module.scss"
 import React, { useState, useEffect } from 'react';
@@ -42,20 +44,13 @@ function MainPortfolio() {
 
     return (
         <div 
-            className={styles.container}
-        
-        >
-            <div className={styles.leftContainer}>
-                <div className={`${styles.left}
-                ${!isFixed ? styles.isFixed
-                :
-                ""}`}>
-                    <FilterBar 
-                        onFilterChange={handleFilterChange}
-                    />
+            className={styles.container}>
+                <div className={`${isFixed ? styles.top : styles.fixed}`}>
+                <FilterBar 
+                    onFilterChange={handleFilterChange}
+                />
                 </div>
-            </div>
-            <div className={`${styles.right} ${!isFixed ? styles.rightBis : ""}`}>
+            <div className={`${styles.right}`}>
                 {filteredProject.map((project, index) => (
                     <Link 
                     to={`${project.id}`}
@@ -64,7 +59,8 @@ function MainPortfolio() {
                         <Work 
                             key={index}
                             title={project.title}
-                            text={project.resume}
+                            type={project.theme}
+                            date={project.date}
                             link={project.link}
                             imageProjectSrc={project.image}
                             logoProjectSrc={project.logo}
@@ -77,3 +73,5 @@ function MainPortfolio() {
 }
 
 export default MainPortfolio
+
+

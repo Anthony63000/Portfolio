@@ -10,6 +10,8 @@ import ReduxLogo from "../../assets/images/skills/redux-logo.svg";
 import NodeLogo from "../../assets/images/skills/nodejs-1.svg";
 import MongoLogo from "../../assets/images/skills/mongodb-icon-2.svg";
 import FirebaseLogo from "../../assets/images/skills/firebase-1.svg";
+import GitHubLogo from "../../assets/images/skills/github-icon-1.svg";
+import GitLogo from "../../assets/images/skills/git-icon.svg";
 
 
 function Stacks() {
@@ -44,6 +46,12 @@ function Stacks() {
                     image2={MongoLogo}
                     image3={FirebaseLogo}
                     description="Dans l'écosystème du développement web, Node.js sert de fondation robuste côté serveur, permettant l'exécution de JavaScript côté serveur. Firebase, avec ses services cloud, offre une plateforme complète pour le développement rapide d'applications web et mobiles, tandis que MongoDB, une base de données NoSQL, assure une gestion flexible et évolutive des données. Ensemble, Node.js, Firebase et MongoDB forment une synergie puissante, facilitant la création d'applications web modernes, agiles et extensibles (En cours d'apprentissage)"
+                />
+                <Stack 
+                    title="Outils de versionning"
+                    image1={GitHubLogo}
+                    image2={GitLogo}
+                    description="Git et GitHub sont des piliers essentiels du processus de développement collaboratif. Git, un système de contrôle de version décentralisé, permet aux développeurs de gérer efficacement les changements de code. GitHub, en tant que plateforme d'hébergement de code, offre un espace collaboratif où les équipes peuvent partager, contribuer et suivre les versions de leur code. Ensemble, Git et GitHub simplifient la gestion du code source, favorisant une collaboration transparente et un développement itératif dans le monde du développement web"
                 />
             </div>
         </div>

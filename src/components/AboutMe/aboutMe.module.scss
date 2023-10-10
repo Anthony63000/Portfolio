@@ -30,10 +30,13 @@
         }
 
         .leftTitle {
+            width: fit-content;
             margin: 0;
             font-size: 25px;
             color: #5138BC;
             text-transform: uppercase;
+            border-bottom: 3px solid #5138BC;
+            padding-bottom: 1px;
 
             @include XS {
                 font-size: 20px;
@@ -42,7 +45,7 @@
 
         .leftAfterTitle {
             font-size: 22px;
-            margin: 5px 0 0 0;
+            margin: 25px 0 0 0;
 
             @include XS {
                 font-size: 18px;
@@ -105,7 +108,7 @@
         }
         
         .leftLinkContainer {
-            margin-top: 40px;
+            margin-top: 25px;
             width: max-content;
             display: flex;
             align-items: center;

@@ -25,6 +25,9 @@
         text-transform: uppercase;
         color: #5138BC;
         font-weight: 700;
+        border-bottom: 3px solid;
+        padding-bottom: 3px;
+        width: fit-content;
 
         @include XS {
             font-size: 16px;

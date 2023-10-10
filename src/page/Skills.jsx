@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
 import SoftSkills from "../components/SoftSkills/SoftSkills";
 import Stacks from "../components/Stacks/Stacks";
+import ToolsSkills from "../components/ToolsSkills/ToolsSkills";
 
 function Skills() {
     return (
@@ -16,6 +17,7 @@ function Skills() {
             <main>
                 <BannerSkills />
                 <Stacks/>
+                <ToolsSkills />
                 <SoftSkills />
             </main>
                 <ScrollTopButton />
