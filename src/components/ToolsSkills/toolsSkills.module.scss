@@ -1,9 +1,15 @@
+@import "../../assets/styles/mixin";
+
 .container {
     margin-top: 30px;
     margin-bottom: 25px;
     border-top: 2px solid rgba(128,128,128, 0.1);
     padding: 50px 50px;
     padding: 0 50px;
+
+    @include S {
+        padding: 0 20px;
+    }
 
     .top {
         display: flex;
@@ -20,16 +26,30 @@
             border-bottom: 3px solid;
             width: fit-content;
             padding-bottom: 2px;
+
+            @include S {
+                font-size: 18px;
+            }
         }
 
         .subTitle {
             margin: 0;
             font-size: 22px;
+
+            @include S {
+                font-size: 18px;
+                text-align: center;
+            }
         }
     }
     .bottom {
         display: flex;
         justify-content: space-between;
+
+        @include M {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .toolContainer {
 
@@ -47,12 +67,21 @@
                 background-color: rgba($color: #f5f5dc, $alpha: 0.3);
             }
 
+            @include M {
+                width: 85%;
+                margin-top: 35px;
+            }
+
             .toolTitle {
                 margin: 0;
                 color: #5138BC;
                 font-size: 20px;
                 border-bottom: 2px solid #5138BC;
                 padding-bottom: 5px;
+
+                @include S {
+                    font-size: 18px;
+                }
             }
 
             .image {
@@ -65,6 +94,10 @@
                 margin: 0;
                 margin-top: 30px;
                 text-align: center;
+
+                @include S {
+                    font-size: 14px;
+                }
             }
         }
     }

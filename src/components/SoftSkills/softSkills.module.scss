@@ -1,9 +1,15 @@
+@import "../../assets/styles/mixin";
+
 .container {
     margin-top: 30px;
     margin-bottom: 25px;
     border-top: 2px solid rgba(128,128,128, 0.1);
     padding: 50px 50px;
     border-bottom: 2px solid rgba(128,128,128, 0.1);
+
+    @include M {
+        padding: 20px;
+    }
 
     .top {
         display: flex;
@@ -19,11 +25,19 @@
             border-bottom: 3px solid;
             width: fit-content;
             padding-bottom: 2px;
+
+            @include XS {
+                font-size: 18px;
+            }
         }
 
         .subTitle {
             margin: 0;
             font-size: 22px;
+
+            @include XS {
+                font-size: 18px;
+            }
         }
     }
 
@@ -32,6 +46,19 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @include XL {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        @include S {
+            display: flex;
+            flex-direction: column;
+
+        }
 
         .softContainer {
             box-shadow: 2px 2px 2px 3px rgba(128,128,128, 0.1);
@@ -47,6 +74,10 @@
                 background-color: rgba($color: #f5f5dc, $alpha: 0.3);
             }
 
+            @include XL {
+                width: 100%;
+            }
+
             .titleCard {
                 margin: 0;
                 text-align: center;
@@ -57,6 +88,10 @@
                 padding-bottom: 5px;
                 border-bottom: 2px solid #5138BC;
                 width: fit-content;
+
+                @include XS {
+                    font-size: 18px;
+                }
             }
 
             .cardImage {
@@ -71,6 +106,10 @@
                 margin: 0;
                 padding: 20px;
                 text-align: center;
+
+                @include XS {
+                    font-size: 14px;
+                }
             }
         }
     }

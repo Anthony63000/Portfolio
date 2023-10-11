@@ -35,14 +35,14 @@
     .subTitle {
         margin: 0;
         font-size: 24px;
-        margin-top: 25px;
+        margin-top: 15px;
 
         @include S {
             text-align: center;
         }
 
         @include XS {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 

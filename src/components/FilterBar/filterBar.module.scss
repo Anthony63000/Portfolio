@@ -15,12 +15,27 @@
             text-transform: uppercase;
             padding-bottom: 3px;
             border-bottom: 2px solid #5138BC;
+
+            @include M {
+                font-size: 16px;
+            }
         } 
 
     .barContainer {
         display: flex;
         gap: 50px;
         box-sizing: border-box;
+
+        @include M {
+            gap: 15px;
+        }
+
+        @include S {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            justify-items: start;
+        }
 
         .filterContainer {
 
@@ -36,6 +51,14 @@
             height: auto;
             padding: 10px;
 
+            @include M {
+                gap: 5px;
+            }
+
+            @include S {
+                padding: 5px;
+            }
+
             &:hover {
                 color: #5138BC;
             }
@@ -44,6 +67,10 @@
                 margin: 0;
                 font-size: 18px;
                 box-sizing: border-box;
+
+                @include S {
+                    font-size: 16px;
+                }
             }
         }
         
