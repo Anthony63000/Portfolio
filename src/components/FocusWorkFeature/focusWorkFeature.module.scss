@@ -14,8 +14,11 @@
 
     .title {
         color: #5138BC;
+        width: fit-content;
         margin: 0;
         margin-left: 20px;
+        padding-bottom: 3px;
+        border-bottom: 3px solid;
 
         @include M {
             text-align: center;

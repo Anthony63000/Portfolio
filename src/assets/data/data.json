@@ -194,7 +194,7 @@
         "category": "React",
         "theme": "Intégration Web",
         "nature": "Projet Openclassrooms",
-        "date": "Spetembre 2023",
+        "date": "Septembre 2023",
         "title": "Argent-Bank - Application bancaire",
         "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
         "link": "https://github.com/Anthony63000/Argent-Bank",
@@ -206,6 +206,33 @@
        "stackLogo": [
         "fa-brands fa-react fa-2xl",
         "fa-brands fa-sass fa-2xl"
+      ],
+        "workLogoId": [
+          "reactClass",
+          "sassClass"
+        ]
+      },
+      {
+        "id": 9,
+        "category": "React",
+        "theme": "Développement Web",
+        "nature": "Projet personel",
+        "date": "Octobre 2023",
+        "title": "To Do List - Application d'enregistrement de tâches",
+        "description":"Pour approfondir mes connaissances en programmation, je me suis lancé le défi de créer une application de liste de tâches avec un serveur et une base de données afin de stocker les informations entrées par l'utilisateur. L'objectif était d'élargir mes compétences dans le domaine du back-end. Dans cette application, j'ai mis en place un serveur ainsi qu'une API pour permettre la communication avec celui-ci. Les utilisateurs ont la possibilité de créer un compte et d'accéder à leur page de profil, où ils peuvent créer de nouvelles collections et ajouter des tâches à ces collections.",
+        "link": "https://github.com/Anthony63000/Argent-Bank",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ToDoList/todo.webp",
+        "logo":"https://anthony63000.github.io/Portfolio/image/logo/logotodo.webp",
+        "stacks": [
+          "React", "Sass", "Redux", "NodeJs", "Express", "MongoDB"
+       ],
+       "stackLogo": [
+          "https://anthony63000.github.io/Portfolio/image/stack/react-2.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/sass-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/redux-logo.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/nodejs-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/express-109.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon_2.svg"
       ],
         "workLogoId": [
           "reactClass",

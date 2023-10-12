@@ -14,11 +14,7 @@ function FocusWorks() {
     const { id } = useParams();
 
     const workSelected = data.projects.find(work => work.id === Number(id));
-
-    if (!workSelected) {
-        return <div>Work non trouvé</div>;
-    }
-
+    
     return (
         <div className={styles.app}>
             <Header />

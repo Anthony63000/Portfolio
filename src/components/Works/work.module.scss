@@ -64,18 +64,33 @@
                 font-size: 26px;
                 border: 3px solid;
                 padding: 10px;
+                text-align: center;
+
+                @include XS {
+                    font-size: 18px;
+                }
             }
 
             .type {
                 font-size: 22px;
                 padding-bottom: 5px;
                 border-bottom: 2px solid;
+
+                @include XS {
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
             }
 
             .date {
                 font-size: 18px;
                 padding-bottom: 5px;
                 border-bottom: 2px solid;
+
+                @include XS {
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
             }
         }
     }

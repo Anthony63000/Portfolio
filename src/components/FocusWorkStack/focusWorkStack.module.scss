@@ -18,9 +18,13 @@
     }
 
     .title {
+        width: fit-content;
         font-size: 20px;
         color: #5138BC;
         font-weight: 700;
+        text-align: center;
+        padding-bottom: 3px;
+        border-bottom: 3px solid;
 
         @include M {
             margin-left: 20px;
