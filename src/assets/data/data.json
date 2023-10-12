@@ -28,15 +28,11 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.png",
         "logo": "https://anthony63000.github.io/Portfolio/image/logo/booki.png",
         "stacks": [
-           "HTML", "CSS"
+           "Html", "Css"
         ],
         "stackLogo": [
-          "fa-brands fa-html5 fa-2xl",
-          "fa-brands fa-css3-alt fa-2xl"
-        ],
-        "workLogoId": [
-          "htmlClass",
-          "cssClass"
+          "https://anthony63000.github.io/Portfolio/image/stack/html-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/css-3.svg"
         ]
       },
       {
@@ -52,15 +48,11 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ohmyfood/cover/ohmyfood.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/ohmyfood.png",
         "stacks": [
-          "HTML", "SASS"
+          "Html", "Sass"
        ],
         "stackLogo": [
-          "fa-brands fa-html5 fa-2xl",
-          "fa-brands fa-sass fa-2xl"
-        ],
-        "workLogoId": [
-          "htmlClass",
-          "sassClass"
+          "https://anthony63000.github.io/Portfolio/image/stack/html-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/sass-1.svg"
         ]
       },
       {
@@ -76,17 +68,12 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/print-it/cover/print-it.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/printIt.png",
         "stacks": [
-          "HTML", "CSS", "JavaScript"
+          "Html", "Css", "JavaScript"
        ],
         "stackLogo": [
-          "fa-brands fa-html5 fa-2xl",
-          "fa-brands fa-css3-alt fa-2xl",
-          "fa-brands fa-square-js fa-2xl"
-        ],
-        "workLogoId": [
-          "htmlClass",
-          "cssClass",
-          "javaScriptClass"
+          "https://anthony63000.github.io/Portfolio/image/stack/html-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/css-3.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/logo-javascript.svg"
         ]
       },
       {
@@ -102,15 +89,11 @@
         "image": "https://anthony63000.github.io/Portfolio/image/Site/Accueuil.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/kasa.png",
         "stacks": [
-          "React", "SASS"
+          "React", "Sass"
        ],
         "stackLogo": [
-          "fa-brands fa-react fa-2xl",
-          "fa-brands fa-sass fa-2xl"
-        ],
-        "workLogoId": [
-          "reactClass",
-          "sassClass"
+          "https://anthony63000.github.io/Portfolio/image/stack/react-2.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/sass-1.svg"
         ]
       },
       {
@@ -126,19 +109,13 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/nina/cover/nina.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/nina.png",
         "stacks": [
-          "HTML", "CSS", "JavaScript", "Bootsrap"
+          "Html", "Css", "JavaScript", "Bootsrap"
        ],
        "stackLogo": [
-        "fa-brands fa-html5 fa-2xl",
-        "fa-brands fa-css3-alt fa-2xl",
-        "fa-brands fa-square-js fa-2xl",
-        "fa-brands fa-bootstrap fa-2xl"
-      ],
-        "workLogoId": [
-          "htmlClass",
-          "cssClass",
-          "javaScriptClass",
-          "bootstrapClass"
+        "https://anthony63000.github.io/Portfolio/image/stack/html-1.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/css-3.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/logo-javascript.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/bootstrap-4.svg"
         ]
       },
       {
@@ -154,15 +131,11 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/events/events.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/724events.png",
         "stacks": [
-          "React", "SASS"
+          "React", "Sass"
        ],
        "stackLogo": [
-        "fa-brands fa-react fa-2xl",
-        "fa-brands fa-sass fa-2xl"
-      ],
-        "workLogoId": [
-          "reactClass",
-          "sassClass"
+        "https://anthony63000.github.io/Portfolio/image/stack/react-2.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/sass-1.svg"
         ]
       },
       {
@@ -178,15 +151,11 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/Riding/riding.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/ridding.png",
         "stacks": [
-          "HTML", "CSS"
+          "Html", "Css"
        ],
        "stackLogo": [
-        "fa-brands fa-html5 fa-2xl",
-        "fa-brands fa-css3-alt fa-2xl"
-      ],
-        "workLogoId": [
-          "htmlClass",
-          "cssClass"
+        "https://anthony63000.github.io/Portfolio/image/stack/html-1.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/css-3.svg"
         ]
       },
       {
@@ -201,15 +170,12 @@
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/argent-bank/argentbank.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/argent.png",
         "stacks": [
-          "React", "SASS"
+          "React", "Sass", "Redux"
        ],
        "stackLogo": [
-        "fa-brands fa-react fa-2xl",
-        "fa-brands fa-sass fa-2xl"
-      ],
-        "workLogoId": [
-          "reactClass",
-          "sassClass"
+        "https://anthony63000.github.io/Portfolio/image/stack/react-2.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/sass-1.svg",
+        "https://anthony63000.github.io/Portfolio/image/stack/redux-logo.svg"
         ]
       },
       {
@@ -232,7 +198,7 @@
           "https://anthony63000.github.io/Portfolio/image/stack/redux-logo.svg",
           "https://anthony63000.github.io/Portfolio/image/stack/nodejs-1.svg",
           "https://anthony63000.github.io/Portfolio/image/stack/express-109.svg",
-          "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon_2.svg"
+          "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon-2.svg"
       ],
         "workLogoId": [
           "reactClass",

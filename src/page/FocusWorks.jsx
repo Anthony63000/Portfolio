@@ -35,8 +35,7 @@ function FocusWorks() {
 
                 <FocusWorkStack 
                     workSelected={workSelected}
-                    workLogo={workSelected.stackLogo}
-                    workLogoColor={workSelected.workLogoId}
+                    stackImage={workSelected.stackLogo}
                 />
             </div>
             <PrevOrNextProject />

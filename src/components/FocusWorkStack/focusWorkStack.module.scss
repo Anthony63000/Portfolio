@@ -39,6 +39,9 @@
     .stacks {
         padding: 50px;
         border: 2px solid rgba(128,128,128, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
         @include M {
             display: flex;
@@ -79,6 +82,11 @@
 
             @include XS {
                 flex-direction: column;
+            }
+
+            .image {
+                width: 35px;
+                height: 35px;
             }
 
             .stackText {

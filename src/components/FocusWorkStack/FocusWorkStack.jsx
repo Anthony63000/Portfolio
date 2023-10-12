@@ -3,8 +3,6 @@ import styles from "./focusWorkStack.module.scss"
 import "../../assets/styles/colorLogo.scss"
 
 function FocusWorkStack({ workSelected, 
-    workLogo, 
-    workLogoColor, 
     stackImage,
     stackAltImage 
 }) {
@@ -22,9 +20,9 @@ function FocusWorkStack({ workSelected,
                         key={index}
                     >
                         <img 
-                            src={stackImage} 
+                            src={stackImage[index]} 
                             alt={stackAltImage} 
-                            className={`${workLogo[index]} ${workLogoColor[index]}`}
+                            className={styles.image}
                         />
                         <p className={styles.stackText}>
                             {work}
