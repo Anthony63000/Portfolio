@@ -1,4 +1,5 @@
 
+import { useTheme } from "../Context/ContextTheme"
 import styles from "./work.module.scss"
 
 
@@ -9,9 +10,19 @@ function Work({
     type,
     date
 }) {
+
+    const { theme } = useTheme()
+
+    let themeClass;
+    if(theme === "light") {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
+
     return (
         <div className={styles.container}>
-            <div className={styles.imageContainer}>
+            <div className={`${styles.imageContainer} ${themeClass}`}>
                 <img 
                     className={styles.image}
                     src={imageProjectSrc} 

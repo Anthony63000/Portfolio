@@ -2,13 +2,17 @@
 
 
 .container {
-    width: 100%;
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     gap: 50px;
+
+    @include L {
+        padding: 0;
+    }
 
     .top {
         width: 50%;
@@ -17,6 +21,11 @@
         border: 2px solid rgba(128,128,128, 0.1);
         border-radius: 5px;
         box-shadow: 1px 1px 10px #5138BC;
+
+        &.dark {
+            background: linear-gradient(to right, black, #5138BC);
+            box-shadow: 1px 1px 10px white;
+        }
 
         @include XL {
             width: 70%;
@@ -39,6 +48,11 @@
         border-radius: 5px;
         margin-top: 5px;
         margin: 0 auto;
+
+        &.dark {
+            background: linear-gradient(to right, black, #5138BC);
+            box-shadow: 1px 1px 10px white;
+        }
 
         @include XL {
             width: 70%;

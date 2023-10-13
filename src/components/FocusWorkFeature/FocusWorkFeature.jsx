@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom"
 import styles from "./focusWorkFeature.module.scss"
+import { languageContext } from "../Context/ContextLang"
+import { useContext } from "react"
+import traduction from "../../assets/data/traduction"
 
 function FocusWorkFeature({
     title,
@@ -9,6 +12,10 @@ function FocusWorkFeature({
     dateText,
     linkText
 }) {
+
+    const { language } = useContext(languageContext)
+    const useLanguage = traduction[language]
+
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>
@@ -16,11 +23,11 @@ function FocusWorkFeature({
             </h2>
             <div className={styles.descriptionContainer}>
                 <p className={styles.detail}>
-                    Détails du projet
+                    {useLanguage.FocusWorkDetail}
                 </p>
                 <div className={styles.row}>
                     <p className={styles.featureTitle}>
-                        Thème
+                        {useLanguage.FocusWorkTheme}
                     </p>
                     <p className={styles.description}>
                         {themeText}
@@ -44,7 +51,7 @@ function FocusWorkFeature({
                 </div>
                 <div className={styles.row}>
                     <p className={styles.featureTitle}>
-                        Date de livraison
+                        {useLanguage.FocusWorkDelivery}
                     </p>
                     <p className={styles.description}>
                         {dateText}

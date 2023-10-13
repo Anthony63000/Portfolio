@@ -4,14 +4,15 @@ import "../../assets/styles/colorLogo.scss"
 
 function FocusWorkStack({ workSelected, 
     stackImage,
-    stackAltImage 
+    stackAltImage,
+    title 
 }) {
 
     return (
         <div className={styles.container}>
             <div className={styles.stacks}>
                     <p className={styles.title}>
-                        Stack technique
+                        {title}
                     </p>
                 <div className={styles.top}>
                 {workSelected.stacks.map((work, index) => (

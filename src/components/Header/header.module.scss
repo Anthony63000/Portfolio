@@ -7,11 +7,16 @@
         justify-content: space-between;
         align-items: center;
         position: fixed;
-        max-width: 1400px;
         background-color: white;
         z-index: 9999;
         box-sizing: border-box;
         width: 100%;
+        padding: 0 50px;
+
+        &.dark {
+            background: linear-gradient(to right, black, #5138BC);
+            color: white;
+        }
 
         @include XL {
             padding: 0 20px;
@@ -23,6 +28,14 @@
                 object-fit: contain;
                 height: 100%;
                 width: 60px;
+
+                &.light {
+                    fill: #5138BC;
+                }
+
+                &.dark {
+                    fill: white;
+                }
             }
         }
         .navigation {
@@ -59,6 +72,16 @@
                         box-sizing: border-box;
                         font-weight: 500;
 
+                        &.dark {
+                            color: white;
+                            transition: all 250ms ease-in-out;
+
+                            &:hover {
+                                text-shadow: 0 0 20px white;
+                                color: black;
+                            }
+                        }
+
                         &:hover {
                             color: #5138BC;
                         }
@@ -68,6 +91,11 @@
                         text-decoration: none;
                         font-weight: 700;
                         font-size: 18px;
+
+                        &.dark {
+                            color: black;
+                            text-shadow: 0 0 10px white;
+                        }
                     }
                 }
             }
@@ -79,6 +107,13 @@
             gap: 15px;
             cursor: pointer;
             transition: all 250ms ease-in-out;
+
+            &.dark {
+                &:hover {
+                    color: black;
+                    text-shadow: 0 0 10px white;
+                }
+            }
 
             &:hover {
                 color: #5138BC;

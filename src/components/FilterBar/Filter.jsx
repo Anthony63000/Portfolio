@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './filterBar.module.scss';
+import { useTheme } from '../Context/ContextTheme';
 
 function Filter({ name,
    classLogo, 
@@ -7,14 +8,25 @@ function Filter({ name,
    handleFilterClick, 
    selectedCategory, 
    defaultFilter }) {
+
+    const { theme } = useTheme();
+
+    let themeClass;
+    if(theme === "light") {
+      themeClass = styles.light
+    } else {
+      themeClass = styles.dark
+    }
+
   return (
     <div
       id={id}
-      className={`${defaultFilter} ${styles.filterContainer} ${selectedCategory === id ? styles.activeFilter : ''}`}
+      className={`${themeClass} ${defaultFilter} ${styles.filterContainer} 
+      ${selectedCategory === id ? styles.activeFilter : ''}`}
       onClick={() => handleFilterClick(id)}
     >
-      <p className={styles.filter}>{name}</p>
-      <i className={`${styles.filterLogo} ${classLogo}`}></i>
+      <p className={`${styles.filter} ${themeClass}`}>{name}</p>
+      <i className={`${styles.filterLogo} ${classLogo} ${themeClass}`}></i>
     </div>
   );
 }

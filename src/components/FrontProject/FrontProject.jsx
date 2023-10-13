@@ -4,6 +4,8 @@ import styles from "./frontProject.module.scss"
 import { NavLink } from "react-router-dom"
 import { useState, useEffect } from "react";
 
+import { useTheme } from "../Context/ContextTheme";
+
 import data from "../../assets/data/data.json"
 
 function FrontProject(
@@ -30,10 +32,19 @@ function FrontProject(
         return () => clearInterval(interval)
     }, [frontProject.length])
 
+    const { theme } = useTheme();
+    let themeClass;
+
+    if(theme === "light") {
+        themeClass = styles.light;
+    } else {
+        themeClass = styles.dark
+    }
+    
     return (
         <div className={styles.container}>
             <div className={styles.top}>
-                <h3 className={styles.title}>
+                <h3 className={`${styles.title} ${themeClass}`}>
                     {title}
                 </h3>
                 <p className={styles.textTitle}>
@@ -47,7 +58,7 @@ function FrontProject(
               key={index}
               className={`${styles.image} ${
                 index === currentIndex ? styles.activeImage : ""
-              }`}
+              } ${themeClass}`}
               src={project.image}
               alt={project.altText}
             />
@@ -63,7 +74,7 @@ function FrontProject(
                             color="#CD6799"
                         />
                     </div>
-                    <h4 className={styles.titleProject}>
+                    <h4 className={`${styles.titleProject} ${themeClass}`}>
                         {titleProject}
                     </h4>
                     <p className={styles.textProject}>
@@ -72,10 +83,10 @@ function FrontProject(
                 </div>
             </div>
             <div className={styles.bottom}>
-                <div className={styles.linkContainer}>
+                <div className={`${styles.linkContainer} ${themeClass}`}>
                     <NavLink 
                         to={"/Works"}
-                        className={styles.link}
+                        className={`${styles.link} ${themeClass}`}
                     >
                             {link}
                     </NavLink>

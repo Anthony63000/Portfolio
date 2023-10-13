@@ -18,8 +18,7 @@
         width: fit-content;
         margin: 0;
         margin-left: 20px;
-        padding-bottom: 3px;
-        border-bottom: 3px solid;
+        padding: 0 20px;
 
         @include M {
             text-align: center;

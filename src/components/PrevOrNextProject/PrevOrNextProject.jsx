@@ -1,65 +1,64 @@
-import { useParams, useNavigate } from "react-router-dom"
-import styles from "./prevOrNextProject.module.scss"
-import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import styles from "./prevOrNextProject.module.scss";
+import { useContext, useState } from "react";
 import data from "../../assets/data/data.json";
+import { languageContext } from "../Context/ContextLang";
+import traduction from "../../assets/data/traduction";
 
-function PrevOrNextProject({ worksPrev, worksNext }) {
-
+function PrevOrNextProject() {
     const { id } = useParams();
-    const [idSelected, setIdSelected] = useState(id)
+    const [idSelected, setIdSelected] = useState(parseInt(id, 10));
     const navigate = useNavigate();
 
     const worksAllId = data.projects;
 
-    console.log(worksAllId)
+    const { language } = useContext(languageContext);
+    const useLanguage = traduction[language];
 
     const goToPrevProject = () => {
-        const prevId = parseInt(idSelected) - 1;
-        if(prevId >= 1) {
-            setIdSelected(prevId.toString());
+        const prevId = idSelected - 1;
+        if (prevId >= 1) {
+            setIdSelected(prevId);
             navigate(`/Works/${prevId}`);
         }
-    }
+    };
 
     const goToNextProject = () => {
-        const nextId = parseInt(idSelected) + 1;
-        const maxId = worksAllId.length
-        if(nextId <= maxId) {
-            setIdSelected(nextId.toString());
+        const nextId = idSelected + 1;
+        const maxId = worksAllId.length;
+        if (nextId <= maxId) {
+            setIdSelected(nextId);
             navigate(`/Works/${nextId}`);
         }
-    }
+    };
+
+    const prevProject = useLanguage.projects[idSelected - 1];
+    const nextProject = useLanguage.projects[idSelected + 1];
 
     return (
         <div className={styles.container}>
-            {id > 1 && (
-            <div 
-                className={styles.left}
-                onClick={goToPrevProject}
-            >
-                <p className={styles.title}>
-                    Consuter le projet précédent
-                </p>
-                <p className={styles.subtitle}>
-                    {worksAllId[id - 2].title}
-                </p>
-            </div>
+            {prevProject && (
+                <div className={styles.left} onClick={goToPrevProject}>
+                    <p className={styles.title}>
+                        {useLanguage.previousProject}
+                        </p>
+                    <p className={styles.subtitle}>
+                        {prevProject.title}
+                    </p>
+                </div>
             )}
-            {id < worksAllId.length && (
-            <div 
-                className={styles.right}
-                onClick={goToNextProject}
-            >
-                <p className={styles.title}>
-                    Consuter le projet suivant
-                </p>
-                <p className={styles.subtitle}>
-                    {worksAllId[id].title}
-                </p>
-            </div>
+            {nextProject && (
+                <div className={styles.right} onClick={goToNextProject}>
+                    <p className={styles.title}>
+                        {useLanguage.nextProject}
+                        </p>
+                    <p className={styles.subtitle}>
+                        {nextProject.title}
+                    </p>
+                </div>
             )}
         </div>
-    )
+    );
 }
 
-export default PrevOrNextProject
+export default PrevOrNextProject;

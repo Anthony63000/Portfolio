@@ -2,15 +2,21 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
 import styles from "./mainPortfolio.module.scss"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import FilterBar from "../FilterBar/FilterBar"
 import Work from "../Works/Work"
 
 import data from "../../assets/data/data.json";
 import { Link } from "react-router-dom";
+import { languageContext } from "../Context/ContextLang";
+import traduction from "../../assets/data/traduction";
+import { useTheme } from "../Context/ContextTheme";
 
 function MainPortfolio() {
+
+    const { language } = useContext(languageContext);
+    const useLanguage = traduction[language]
 
     const projects = data.projects;
     const [filteredProject, setFilteredProject] = useState(projects)
@@ -42,10 +48,18 @@ function MainPortfolio() {
         };
     }, []);
 
+    const { theme } = useTheme();
+    let themeClass;
+    if(theme === 'light') {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
+
     return (
         <div 
             className={styles.container}>
-                <div className={`${isFixed ? styles.top : styles.fixed}`}>
+                <div className={`${isFixed ? styles.top : styles.fixed} ${themeClass}`}>
                 <FilterBar 
                     onFilterChange={handleFilterChange}
                 />
@@ -58,9 +72,9 @@ function MainPortfolio() {
                     >
                         <Work 
                             key={index}
-                            title={project.title}
-                            type={project.theme}
-                            date={project.date}
+                            title={useLanguage.projects[project.id].title}
+                            type={useLanguage.projects[project.id].theme}
+                            date={useLanguage.projects[project.id].date}
                             link={project.link}
                             imageProjectSrc={project.image}
                             logoProjectSrc={project.logo}

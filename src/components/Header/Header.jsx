@@ -1,11 +1,12 @@
 import styles from "../Header/header.module.scss"
-import Logo from "../../assets/images/logo-entreprise/logo-entreprise.png"
 
 import { useContext, useState } from "react";
 
 import NavLinkItems from "./NavLinkItems"
 import MyNetwork from "../MyNetwork/MyNetwork";
 import { languageContext } from "../Context/ContextLang";
+import LogoEntreprise from "../LogoEntreprise/LogoEntreprise";
+import { useTheme } from "../Context/ContextTheme";
 
 function Header() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -34,18 +35,16 @@ function Header() {
     const burgerClass = "fa-solid fa-bars fa-xl"
     const closeClass = "fa-solid fa-circle-xmark fa-xl"
 
+    const { theme } = useTheme()
+
     return (
-            <div className={styles.container}>
+            <div className={`${styles.container} ${theme === "light" ? "" : styles.dark}`}>
                 <div className={styles.containerLogo}>
-                    <img 
-                        className={styles.logo}
-                        src={Logo} 
-                        alt="Logo du site"
-                    />
+                    <LogoEntreprise />
                 </div>
                 <NavLinkItems />
                 <div 
-                    className={styles.langageContainer}
+                    className={`${styles.langageContainer} ${theme === "light" ? "" : styles.dark}`}
                     onClick={changeTextLang}
                 >
                         <p 

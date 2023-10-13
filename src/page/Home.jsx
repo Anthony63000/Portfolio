@@ -5,7 +5,6 @@ import FrontProject from "../components/FrontProject/FrontProject";
 import Footer from "../components/Footer/Footer"
 
 import styles from "../assets/styles/global.module.scss";
-import Logo from "../assets/images/logo-entreprise/logo-entreprise.png"
 import AboutMe from "../components/AboutMe/AboutMe";
 import Me from "../assets/images/Moi/moi 2 .jpg"
 
@@ -13,20 +12,21 @@ import { useContext } from "react";
 import traduction from "../assets/data/traduction";
 import { languageContext } from "../components/Context/ContextLang";
 import ScrollTopButton from "../components/ScrollTopButton/ScrollTopButton";
+import { useTheme } from "../components/Context/ContextTheme";
 
 function Home() {
 
   const { language } = useContext(languageContext)
 
+  const { theme } = useTheme();
+
   return (
-    <div className={styles.app}>
+    <div className={`${styles.app} ${theme === 'light' ? styles.light : styles.dark}`}>
       <header>
          <Header />
       </header>
       <main>
         <Banner 
-          bannerImage={Logo}
-          altBanner="Logo du site"
           job={traduction[language].job}
         />
         <AboutMe 

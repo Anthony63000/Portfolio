@@ -1,3 +1,4 @@
+
   {
     "frontProject": [
       {
@@ -18,12 +19,6 @@
       {
         "id": 1,
         "category": "HTML&CSS",
-        "theme": "Intégration Web",
-        "nature": "Projet Openclassrooms",
-        "date": "Mars 2023",
-        "title": "Booki - Page d'accueil d'une agence de voyage",
-        "resume": "Découvre le premier site statique que j'ai réalisé en HTML et CSS. Ici, tu vas découvrir le premier projet que j'ai réalisé pour une agence de location immobilière dans le cadre de ma formation chez OpenClassrooms.",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en alternance dans une start-up du nom de Booki, l'entreprise voulait développer un site qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. On m'a donc confié la tâche de l'intégration de l'interface du site à partir de la maquette du designer (maquette Figma) et des spécifications fonctionnelles de ma CTO.",
         "link": "https://anthony63000.github.io/Booki/",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.png",
         "logo": "https://anthony63000.github.io/Portfolio/image/logo/booki.png",
@@ -38,12 +33,6 @@
       {
         "id": 2,
         "category": "HTML&CSS",
-        "theme": "Intégration Web",
-        "nature": "Projet Openclassrooms",
-        "date": "Mars 2023",
-        "title": "OhMyFood - Répertoire de restaurants en ligne",
-        "resume": "Découvre ce site statique créé grâce aux langages HTML et CSS ou j'ai appris à utiliser le préprocesseur SASS ainsi que les annimation CSS pour une jeune startup qui propose des menus de restaurant en ligne, dans le cadre de ma formation OpenClassrooms.",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en tant que développeur junior au sein d'une jeune startup du nom de Ohmyfood. Ma mission était d'intégrer le site grâce aux maquettes du designer et des consignes de mon CTO, ce projet intègre le préprocesseur Sass à la place du Css classique et c'est ici que j'ai mis en oeuvre mes premières animations CSS",
         "link": "https://anthony63000.github.io/Ohmyfood/",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ohmyfood/cover/ohmyfood.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/ohmyfood.png",
@@ -58,12 +47,6 @@
       {
         "id": 3,
         "category": "Javascript",
-        "theme": "Intégration Web",
-        "nature": "Projet Openclassrooms",
-        "date": "Avril 2023",
-        "title": "Print-it - Page d'accueil d'une imprimerie",
-        "resume":"Découvre la réalisation du carrousel de ce site d'une petite imprimerie. Ici j'ai appris à utiliser le langage JavaScript dans le cadre de ma formation OpenClassrooms.",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour dynamiser un site statique avec le langage Javascript. Je suis intervenu dans ce projet au niveau de la bannière que j'ai rendue dynamique en intégrant un carrousel avec des images qui défilent.",
         "link": "https://anthony63000.github.io/Print-it/",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/print-it/cover/print-it.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/printIt.png",
@@ -79,12 +62,6 @@
       {
         "id": 4,
         "category": "React",
-        "theme": "Intégration Web",
-        "nature": "Projet Openclassrooms",
-        "date": "Juillet 2023",
-        "title": "Kasa - Application web",
-        "resume": "Découvre la première application web que j'ai réalisé avec React. Ici j'ai appris à utiliser la bibliothèque React pour une agence de location immobilière dans le cardre de ma formation OpenClassrooms. ",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet. J'ai donc intégré l'application complète avec React.",
         "link": "https://anthony63000.github.io/Kasa/",
         "image": "https://anthony63000.github.io/Portfolio/image/Site/Accueuil.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/kasa.png",
@@ -99,12 +76,6 @@
       {
         "id": 5,
         "category": "Javascript",
-        "theme": "Optimisation du site",
-        "nature": "Projet Openclassrooms",
-        "date": "Août 2023",
-        "title": "Nina Cardduci - Optimisation du site",
-        "resume": "Découvre ce site d'une photographe que j'ai démarché pour optimiser son site qui était assez lent. Ici je me suis occuper de l'optimisation global du site.",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour l'optimisation du SEO du site de Nina Cardduci, une photographe localisée à Bordeaux. Ici je me suis occupé d'optimiser le site que ce soit en matière de performance mais aussi en matière d'accèssibilité et de SEO. J'ai aussi mis en place des balises méta pour configurer le lien du site sur les réseaux sociaux ainsi que la mise en place de résultat enrichie pour configurer l'affichage du site sur Google.",
         "link": "https://anthony63000.github.io/NinaCarducci/",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/nina/cover/nina.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/nina.png",
@@ -121,12 +92,6 @@
       {
         "id": 6,
         "category": "React",
-        "theme": "Débuggage d'une application",
-        "nature": "Projet Openclassrooms",
-        "date": "Août 2023",
-        "title": "724 Events - Débugage de l'applicatiion",
-        "resume": "Découvre cette application d'une agence événementielle qui a fait appel à moi pour réparer leur site qui dysfonctionne. Ici, je vais déboguer une application React et réaliser des tests unitaires et d'intégration dans le cadre de ma formation chez OpenClassrooms.",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un développeur web front-end freelance et je décroche une offre pour réparer le site d'une agence d'événementiels. Dans cette mission je me suis occupé de réparer le site mais aussi d'écrire des tests unitaires ainsi que des tests d'intégration pour veiller au bon fonctionnement du site de bout en bout.",
         "link": "https://github.com/Anthony63000/724Events",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/events/events.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/724events.png",
@@ -141,12 +106,6 @@
       {
         "id": 7,
         "category": "HTML&CSS",
-        "theme": "Intégration Web",
-        "nature": "Projet Openclassrooms",
-        "date": "Mars 2023",
-        "title": "Riding Cites - Intégration HTML",
-        "resume":"Découvre ce site statique de l'agence Webonzai qui propose des cours de skatboard. Ici, j'ai fait mes premiers pas sur le langage HTML dans le cadre de ma formation OpenClassrooms",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
         "link": "https://github.com/Anthony63000/724Events",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/Riding/riding.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/ridding.png",
@@ -161,11 +120,6 @@
       {
         "id": 8,
         "category": "React",
-        "theme": "Intégration Web",
-        "nature": "Projet Openclassrooms",
-        "date": "Septembre 2023",
-        "title": "Argent-Bank - Application bancaire",
-        "description": "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
         "link": "https://github.com/Anthony63000/Argent-Bank",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/argent-bank/argentbank.png",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/argent.png",
@@ -181,11 +135,6 @@
       {
         "id": 9,
         "category": "React",
-        "theme": "Développement Web",
-        "nature": "Projet personel",
-        "date": "Octobre 2023",
-        "title": "To Do List - Application d'enregistrement de tâches",
-        "description":"Pour approfondir mes connaissances en programmation, je me suis lancé le défi de créer une application de liste de tâches avec un serveur et une base de données afin de stocker les informations entrées par l'utilisateur. L'objectif était d'élargir mes compétences dans le domaine du back-end. Dans cette application, j'ai mis en place un serveur ainsi qu'une API pour permettre la communication avec celui-ci. Les utilisateurs ont la possibilité de créer un compte et d'accéder à leur page de profil, où ils peuvent créer de nouvelles collections et ajouter des tâches à ces collections.",
         "link": "https://github.com/Anthony63000/Argent-Bank",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ToDoList/todo.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/logotodo.webp",
@@ -199,11 +148,7 @@
           "https://anthony63000.github.io/Portfolio/image/stack/nodejs-1.svg",
           "https://anthony63000.github.io/Portfolio/image/stack/express-109.svg",
           "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon-2.svg"
-      ],
-        "workLogoId": [
-          "reactClass",
-          "sassClass"
-        ]
+      ]
       }
     ]
 }

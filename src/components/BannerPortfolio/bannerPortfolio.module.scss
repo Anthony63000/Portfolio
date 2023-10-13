@@ -23,11 +23,15 @@
         margin: 0;
         font-size: 22px;
         text-transform: uppercase;
-        color: #5138BC;
         font-weight: 700;
-        border-bottom: 3px solid;
-        padding-bottom: 3px;
         width: fit-content;
+
+        &.dark {
+            background-image: linear-gradient(to left, white, #5138BC);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
 
         @include XS {
             font-size: 16px;

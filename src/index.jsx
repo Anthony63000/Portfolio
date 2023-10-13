@@ -10,22 +10,27 @@ import Contact from './page/Contact';
 import LanguageContextProvider from './components/Context/ContextLang';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import FocusWorks from './page/FocusWorks';
+import { ThemeProvider } from './components/Context/ContextTheme';
+import DarkLightModeButton from './components/DarkLightModeButton/DarkLightModeButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <LanguageContextProvider>
-    <React.StrictMode>
-      <Router>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/Portfolio" element={<Home />}/>
-          <Route path="/Works" element={<Portfolio key="portfolio"/>}/>
-          <Route path='/Works/:id' element={<FocusWorks />}/>
-          <Route path='/Compétences' element={<Skills key="skills"/>}/>
-          <Route path='/Contact' element={<Contact key="contact"/>}/>
-        </Routes>
-      </Router>
-    </React.StrictMode>
+    <ThemeProvider>
+      <React.StrictMode>
+        <Router>
+          <ScrollToTop />
+          <DarkLightModeButton />
+          <Routes>
+            <Route path="/Portfolio" element={<Home />}/>
+            <Route path="/Works" element={<Portfolio key="portfolio"/>}/>
+            <Route path='/Works/:id' element={<FocusWorks />}/>
+            <Route path='/Compétences' element={<Skills key="skills"/>}/>
+            <Route path='/Contact' element={<Contact key="contact"/>}/>
+          </Routes>
+        </Router>
+      </React.StrictMode>
+    </ThemeProvider>
   </LanguageContextProvider>
 );
 

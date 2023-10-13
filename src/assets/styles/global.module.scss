@@ -8,12 +8,16 @@ body {
 
 .app {
     font-family: 'Dosis', sans-serif;
-    max-width: 1400px;
     min-width: 320px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+}
+
+.dark {
+    background: linear-gradient(to right, black, #5138BC);
+    color: white;
 }
 
 .mainContainer {

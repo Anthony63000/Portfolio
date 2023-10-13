@@ -3,7 +3,7 @@ import styles from "./bannerFocusWork.module.scss"
 
 //import data from "../../assets/data/data.json"
 
-function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link }) {
+function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link, returnButton }) {
 
     const logoReturn = "fa-solid fa-arrow-left"
     const linkLogo = "fa-solid fa-link"
@@ -24,7 +24,7 @@ function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link }) {
                     <p 
                         className={styles.button}
                     >
-                        Retour
+                        {returnButton}
                     </p>
                 </NavLink>
                 <NavLink 

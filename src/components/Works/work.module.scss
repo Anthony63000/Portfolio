@@ -23,6 +23,10 @@
         &:hover {
             box-shadow: 0 0 10px #5138BC;
 
+            &.dark {
+                box-shadow: 0 0 20px white;
+            }
+
             .image {
                 transform: scale(1.05);
                 filter: brightness(0.2);

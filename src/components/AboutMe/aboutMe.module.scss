@@ -35,8 +35,15 @@
             font-size: 25px;
             color: #5138BC;
             text-transform: uppercase;
-            border-bottom: 3px solid #5138BC;
-            padding-bottom: 1px;
+            letter-spacing: 2px;
+            text-align: center;
+
+            &.dark {
+                background-image: linear-gradient(to right, white, #5138BC);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
 
             @include XS {
                 font-size: 20px;
@@ -91,10 +98,6 @@
                 justify-content: center;
                 gap: 5px;
 
-                .check {
-                    color: green;
-
-                }
 
                 .skills {
                     font-size: 18px;
@@ -123,6 +126,12 @@
             box-shadow:  1px 2px 4px black;
             transition: all 250ms ease-in-out;
 
+            &.dark {
+                background: linear-gradient(160deg,#5138BC, white);
+                border: none;
+                box-shadow: none;
+            }
+
             @include M {
                 margin-top: 20px;
             }
@@ -144,6 +153,10 @@
                 box-sizing: border-box;
                 font-weight: 700;
                 color: white;
+
+                &.dark {
+                    color: black;
+                }
 
                 @include S {
                     font-size: 8px;
@@ -171,6 +184,10 @@
             width: 200px;
             height: 200px;
             border-radius: 10px;
+
+            &.dark {
+                box-shadow: 0 0 25px white;
+            }
 
             @include XS {
                 width: 150px;

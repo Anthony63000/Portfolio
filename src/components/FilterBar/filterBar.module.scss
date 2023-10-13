@@ -61,6 +61,11 @@
 
             &:hover {
                 color: #5138BC;
+
+                &.dark {
+                    color: black;
+                    text-shadow: 0 0 10px white;
+                }
             }
 
             .filter {
@@ -73,19 +78,31 @@
                 }
             }
         }
-        
+
         .activeFilter {
             transform: scale(1.10);
             margin: 0;
-            color: #5138BC;
 
-            & .filter {
-                color: #5138BC;
+            &.dark {
+                text-shadow: 0 0 20px white;
             }
 
-            & .filterLogo {
+            .filter {
                 color: #5138BC;
+
+                &.dark {
+                    color: black;
+                }
+            }
+
+            .filterLogo {
+                color: #5138BC;
+
+                &.dark {
+                    color: black;
+                }
             }
         }
+
     }
 } 
