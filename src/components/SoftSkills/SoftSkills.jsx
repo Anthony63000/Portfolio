@@ -8,17 +8,25 @@ import imagePosivité from "../../assets/images/softSkills/positivité.webp";
 import { useContext } from "react";
 import { languageContext } from "../Context/ContextLang";
 import traduction from "../../assets/data/traduction";
+import { useTheme } from "../Context/ContextTheme";
 
 function SoftSkills() {
 
-const { language } = useContext(languageContext)
+    const { language } = useContext(languageContext)
+    const useLanguage = traduction[language]
 
-const useLanguage = traduction[language]
+    const { theme } = useTheme();
+    let themeClass;
+    if(theme === "light") {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
 
     return (
         <div className={styles.container}>
             <div className={styles.top}>
-                <h3 className={styles.title}>
+                <h3 className={`${styles.title} ${themeClass}`}>
                     {useLanguage.softSkillTitle}
                 </h3>
                 <p className={styles.subTitle}>

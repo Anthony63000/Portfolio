@@ -22,9 +22,14 @@
         text-transform: uppercase;
         color: #5138BC;
         font-weight: 700;
-        border-bottom: 3px solid;
-        padding-bottom: 3px;
         width: fit-content;
+
+        &.dark {
+            background-image: linear-gradient(to left, white, #5138BC);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
 
         @include XS {
             font-size: 18px;
@@ -61,6 +66,12 @@
         box-shadow:  1px 2px 4px black;
         transition: all 250ms ease-in-out;
 
+        &.dark {
+            background: linear-gradient(45deg,#5138BC, white);
+            border: none;
+            box-shadow: none;
+        }
+
         @include XS {
             font-size: 10px;
             margin-top: 15px;
@@ -77,6 +88,12 @@
         height: 450px;
         margin-top: 50px;
         border: 1px solid rgba(128,128,128, 0.1);
+
+        &.dark {
+            box-shadow: 0 0 20px white;
+            border: none;
+            border-radius: 10px;
+        }
 
         @include S {
             margin-top: 25px;

@@ -1,3 +1,4 @@
+import { useTheme } from "../Context/ContextTheme";
 import styles from "./toolsSkills.module.scss";
 
 function ToolSkill({
@@ -6,9 +7,18 @@ function ToolSkill({
     altToolImage,
     description
 }) {
+
+    const { theme } = useTheme();
+    let themeClass;
+    if(theme === "light") {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
+
     return (
-        <div className={styles.toolContainer}>
-            <h4 className={styles.toolTitle}>
+        <div className={`${styles.toolContainer} ${themeClass}`}>
+            <h4 className={`${styles.toolTitle} ${themeClass}`}>
                 {title}
             </h4>
             <img 

@@ -1,3 +1,4 @@
+import { useTheme } from "../Context/ContextTheme";
 import styles from "./softSkills.module.scss";
 
 function SoftSkill({ 
@@ -6,10 +7,19 @@ function SoftSkill({
      cardImageAlt,
      textDescription 
     }) {
+
+        const { theme } = useTheme();
+        let themeClass;
+        if(theme === "light") {
+            themeClass = styles.light
+        } else {
+            themeClass = styles.dark
+        }
+
     return (
-        <div className={styles.softContainer}>
+        <div className={`${styles.softContainer} ${themeClass}`}>
             <h4
-                className={styles.titleCard}
+                className={`${styles.titleCard} ${themeClass}`}
             >
                 {title}
             </h4>

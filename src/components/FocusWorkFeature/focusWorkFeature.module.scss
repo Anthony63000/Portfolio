@@ -20,6 +20,13 @@
         margin-left: 20px;
         padding: 0 20px;
 
+        &.dark {
+            background-image: linear-gradient(to right, white, #5138BC);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
         @include M {
             text-align: center;
             margin: 0;
@@ -42,6 +49,10 @@
             font-size: 20px;
             font-weight: 600;
             color: #5138BC;
+
+            &.dark {
+                color: white;
+            }
 
             @include XS {
                 font-size: 18px;
@@ -76,6 +87,10 @@
                 padding-left: 50px;
                 color: black;
                 white-space: wrap;
+
+                &.dark {
+                    color: white;
+                }
 
                 @include XS {
                     font-size: 14px;

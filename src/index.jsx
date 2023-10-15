@@ -25,7 +25,7 @@ root.render(
             <Route path="/Portfolio" element={<Home />}/>
             <Route path="/Works" element={<Portfolio key="portfolio"/>}/>
             <Route path='/Works/:id' element={<FocusWorks />}/>
-            <Route path='/Compétences' element={<Skills key="skills"/>}/>
+            <Route path='/Competences' element={<Skills key="skills"/>}/>
             <Route path='/Contact' element={<Contact key="contact"/>}/>
           </Routes>
         </Router>

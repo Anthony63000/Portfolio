@@ -1,3 +1,4 @@
+import { useTheme } from "../Context/ContextTheme";
 import styles from "./stacks.module.scss";
 
 function Stack({ title,
@@ -8,9 +9,17 @@ function Stack({ title,
 
         const images = [image1, image2, image3].filter(Boolean);
 
+        const { theme } = useTheme();
+        let themeClass;
+        if(theme === "light") {
+            themeClass = styles.light
+        } else {
+            themeClass = styles.dark
+        }
+
     return (
-        <div className={styles.stackContainer}>
-            <h4 className={styles.stackTitle}>
+        <div className={`${styles.stackContainer} ${themeClass}`}>
+            <h4 className={`${styles.stackTitle} ${themeClass}`}>
                 {title}
             </h4>
             <div className={styles.imageContainer}>

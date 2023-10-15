@@ -26,10 +26,12 @@
             text-transform: uppercase;
             color: #5138BC;
             font-weight: 700;
-            font-size: 22px;
-            border-bottom: 3px solid;
+            font-size: 22px; 
             width: fit-content;
-            padding-bottom: 2px;
+
+            &.dark {
+                color: white;
+            }
 
             @include XS {
                 font-size: 18px;
@@ -86,6 +88,10 @@
                     font-weight: 600;
                     margin-top: 20px;
                     width: 100%;
+
+                    &.dark {
+                        color: white;
+                    }
                 }
 
                 .input {
@@ -100,10 +106,21 @@
                     &:focus {
                         outline: 1px solid rgba(128,128,128, 0.6);
                     }
+
+                    &.dark {
+                        background: linear-gradient(to right, black, #5138BC);
+                        color: white;
+                        box-shadow: 0 0 10px white;
+                    }
                 }
 
                 .inputOk {
                     border-color: green;
+                    
+
+                    &.dark {
+                        box-shadow: 0 0 10px green;
+                    }
                 }
 
                 .message {
@@ -127,6 +144,11 @@
 
                 .isValid {
                     background-color: #5138BC;
+
+                    &.dark {
+                        background-color: black;
+                        box-shadow:  0 0 20px white;
+                    }
                 }
             }
 

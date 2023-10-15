@@ -25,7 +25,7 @@ function NavLinkItems() {
                 item="Portfolio"
             />
             <NavLinkItem 
-                link="/Compétences"
+                link="/Competences"
                 item={traduction[language].compétences}
             />
             <NavLinkItem 

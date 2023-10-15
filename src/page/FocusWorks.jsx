@@ -34,7 +34,7 @@ function FocusWorks() {
         <div className={`${styles.app} ${themeClass}`}>
             <Header />
             <BannerFocusWorks 
-                imageBanner={workSelected.logo}
+                imageBanner={workSelected.image}
                 link={workSelected.link}
                 linkText={useLanguage.BannerFocusVisit}
                 returnButton={useLanguage.BannerFocusReturn}

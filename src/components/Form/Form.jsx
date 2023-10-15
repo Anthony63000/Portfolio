@@ -7,6 +7,7 @@ import styles from "./form.module.scss"
 import { useContext } from 'react';
 import traduction from '../../assets/data/traduction';
 import { languageContext } from '../Context/ContextLang';
+import { useTheme } from '../Context/ContextTheme';
 
 function Form() {
 
@@ -58,8 +59,6 @@ function Form() {
         };
     }, [resetTimeout]);
 
-    // Contrôle des entrées dans le formulaire
-
     const [firstNameControl, setFirstNameControl] = useState("");
     const [emailControl, setEmailControl] = useState("");
     const [messageControl, setMessageControl] = useState("");
@@ -79,10 +78,18 @@ function Form() {
         }
     }, [firstNameControl, emailControl, messageControl])
 
+    const { theme } = useTheme();
+    let themeClass;
+    if(theme === 'light') {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.top}>
-                <h3 className={styles.title}>
+                <h3 className={`${styles.title} ${themeClass}`}>
                     {useLanguage.contactTitle}
                 </h3>
                 <p className={styles.subtitle}>
@@ -98,31 +105,30 @@ function Form() {
                     >
                         <label 
                             htmlFor="name"
-                            className={styles.label}
+                            className={`${styles.label} ${themeClass}`}
                         >
                                 {useLanguage.contactPrenom}
                         </label>
                         <input 
-                            className={`${styles.input} ${firstNameControl !== "" ? 
+                            className={`${styles.input} ${themeClass} ${firstNameControl !== "" ? 
                             styles.inputOk
                             :
                             styles.inputFalse
                             }`}
                             type="text" 
                             name="name" 
-                            placeholder={useLanguage.contactPrenomplaceholder}
                             value={firstNameControl}
                             onChange={(event) => { handleChange(event, setFirstNameControl)
                             }}
                         />
                         <label 
                             htmlFor="email"
-                            className={styles.label}
+                            className={`${styles.label} ${themeClass}`}
                         >
                                 *Email :
                         </label>
                         <input 
-                            className={`${styles.input} ${emailControl !== "" && emailControl.includes("@") ? 
+                            className={`${styles.input} ${themeClass} ${emailControl !== "" && emailControl.includes("@") ? 
                             styles.inputOk
                             :
                             styles.inputFalse
@@ -130,22 +136,20 @@ function Form() {
                             type="email" 
                             name="email" 
                             value={emailControl}
-                            placeholder={useLanguage.contactEmailPlaceholder}
                             onChange={(event) => { handleChange(event, setEmailControl)
                             }}
                         />
                         <label 
                             htmlFor="message"
-                            className={styles.label}
+                            className={`${styles.label} ${themeClass}`}
                         >
                             *Message :
                         </label>
                         <textarea 
-                            className={`${styles.input} ${styles.message}
+                            className={`${styles.input} ${themeClass} ${styles.message}
                             ${messageControl.length < 800 && messageControl !== "" ? styles.inputOk : styles.inputFalse}
                             `}
                             name="message"
-                            placeholder={useLanguage.contactMessagePlaceholder}
                             value={messageControl}
                             onChange={(event) => { handleChange(event, setMessageControl)
                             }}
@@ -153,7 +157,7 @@ function Form() {
                         </textarea>
                         <button
                             disabled={!formIsValidate}
-                            className={`${styles.button} ${formIsValidate === true ? styles.isValid : ""}`}
+                            className={`${styles.button} ${themeClass} ${formIsValidate === true ? styles.isValid : ""}`}
                             type="submit"
                         >
                             {useLanguage.contactButtonSubmit}

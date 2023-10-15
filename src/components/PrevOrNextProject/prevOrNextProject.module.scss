@@ -39,6 +39,10 @@
 
         &:hover .title {
             color: #5138BC;
+
+            &.dark {
+                color: black;
+            }
         }
     }
 
@@ -62,6 +66,10 @@
 
         &:hover .title {
             color: #5138BC;
+
+            &.dark {
+                color: black;
+            }
         }
     }
 

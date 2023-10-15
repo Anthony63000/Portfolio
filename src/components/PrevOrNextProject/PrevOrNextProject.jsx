@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 import data from "../../assets/data/data.json";
 import { languageContext } from "../Context/ContextLang";
 import traduction from "../../assets/data/traduction";
+import { useTheme } from "../Context/ContextTheme";
 
 function PrevOrNextProject() {
     const { id } = useParams();
@@ -35,11 +36,19 @@ function PrevOrNextProject() {
     const prevProject = useLanguage.projects[idSelected - 1];
     const nextProject = useLanguage.projects[idSelected + 1];
 
+    const { theme } = useTheme();
+    let themeClass;
+    if(theme === "light") {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
+
     return (
         <div className={styles.container}>
             {prevProject && (
                 <div className={styles.left} onClick={goToPrevProject}>
-                    <p className={styles.title}>
+                    <p className={`${styles.title} ${themeClass}`}>
                         {useLanguage.previousProject}
                         </p>
                     <p className={styles.subtitle}>
@@ -49,7 +58,7 @@ function PrevOrNextProject() {
             )}
             {nextProject && (
                 <div className={styles.right} onClick={goToNextProject}>
-                    <p className={styles.title}>
+                    <p className={`${styles.title} ${themeClass}`}>
                         {useLanguage.nextProject}
                         </p>
                     <p className={styles.subtitle}>

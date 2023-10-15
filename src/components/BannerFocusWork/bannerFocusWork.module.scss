@@ -5,12 +5,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
     position: relative;
     border-top: 2px solid rgba(128,128,128, 0.1);
 
     @include S {
-        height: 175px;
+        padding-bottom: 75px;
+    }
+
+    .image {
+        height: 275px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px black;
+
+        &.dark {
+            box-shadow: 0 0 20px white;
+        }
+
+        @include L {
+            height: 200px;
+        }
+
+        @include M {
+            height: 150px;
+        }
+
+        @include XS {
+            height: 125px;
+        }
     }
 
     .containerButtons {
@@ -21,8 +43,12 @@
         display: flex;
         justify-content: space-between;
 
-        @include XS {
-            top: 55%;
+        @include L {
+            width: 95%;
+        }
+
+        @include S {
+            top: 65%;
         }
     
         .containerButton {
@@ -45,6 +71,10 @@
             text-decoration: none;
             color: black;
             margin: 0;
+
+            &.dark {
+                color: white;
+            }
 
             @include XS {
                 font-size: 14px;

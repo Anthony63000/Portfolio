@@ -26,6 +26,13 @@
             width: fit-content;
             padding-bottom: 2px;
 
+            &.dark {
+                background-image: linear-gradient(to right, white, #5138BC);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
             @include XS {
                 font-size: 18px;
             }
@@ -68,10 +75,19 @@
             align-items: center;
             word-wrap: break-word;
             transition: all 250ms ease-in-out;
+            border-radius: 5px;
+
+            &.dark {
+                box-shadow: 0 0 10px black;
+            }
 
             &:hover {
                 transform: scale(1.1);
                 background-color: rgba($color: #f5f5dc, $alpha: 0.3);
+
+                &.dark {
+                    box-shadow: 0 0 20px white;
+                }
             }
 
             @include XL {
@@ -88,6 +104,11 @@
                 padding-bottom: 5px;
                 border-bottom: 2px solid #5138BC;
                 width: fit-content;
+
+                &.dark {
+                    color: white;
+                    border-color: white;
+                }
 
                 @include XS {
                     font-size: 18px;
