@@ -49,6 +49,7 @@
         display: flex;
         margin-top: 35px;
         border: 1px solid rgba(128,128,128, 0.1);
+        position: relative;
 
         @include M {
             flex-direction: column;
@@ -63,14 +64,9 @@
         .left {
             width: 50%;
             padding: 25px 100px;
-            position: relative;
 
             @include M {
                 width: 100%;
-            }
-
-            @include XS {
-                height: fit-content;
             }
 
             .image {
@@ -104,7 +100,7 @@
                 @include XS {
                     left: 30px;
                     width: 80%;
-                    height: fit-content;
+                    height: 200px;
                 }
 
             }
