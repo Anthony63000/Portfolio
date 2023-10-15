@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c0d64eab.css",
-    "main.js": "/Portfolio/static/js/main.68bf1227.js",
+    "main.css": "/Portfolio/static/css/main.fcc30de7.css",
+    "main.js": "/Portfolio/static/js/main.a430a042.js",
     "static/js/787.1297335f.chunk.js": "/Portfolio/static/js/787.1297335f.chunk.js",
     "static/media/positivité.webp": "/Portfolio/static/media/positivité.bbe68c38e4c545c25516.webp",
     "static/media/apprentissage.webp": "/Portfolio/static/media/apprentissage.0425240ee259070bb366.webp",
@@ -24,12 +24,12 @@
     "static/media/gimp.svg": "/Portfolio/static/media/gimp.e6e784c88cc3acdd85a9e3de811f92fe.svg",
     "static/media/css-3.svg": "/Portfolio/static/media/css-3.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html-1.svg": "/Portfolio/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
-    "main.c0d64eab.css.map": "/Portfolio/static/css/main.c0d64eab.css.map",
-    "main.68bf1227.js.map": "/Portfolio/static/js/main.68bf1227.js.map",
+    "main.fcc30de7.css.map": "/Portfolio/static/css/main.fcc30de7.css.map",
+    "main.a430a042.js.map": "/Portfolio/static/js/main.a430a042.js.map",
     "787.1297335f.chunk.js.map": "/Portfolio/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0d64eab.css",
-    "static/js/main.68bf1227.js"
+    "static/css/main.fcc30de7.css",
+    "static/js/main.a430a042.js"
   ]
 }
