@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
+import cv from "../../assets/data/cv/cv.pdf"
+
 import styles from "./bannerSkills.module.scss";
 
 import skills from "../../assets/images/skills/skills.webp"
@@ -33,8 +35,9 @@ function BannerSkills() {
                 {useLanguage.bannerSkillsSubtitle}
             </p>
             <a 
-                href="#"
-                className={`${styles.link} ${themeClass}`}
+                href={cv}
+                target="_blank"
+                className={`${styles.link} ${themeClass}`} rel="noreferrer"
             >
                     {useLanguage.bannerSkillsLink}
             </a>
