@@ -17,17 +17,19 @@ function Contact() {
     }
 
     return (
-        <div className={`${styles.app} ${themeClass}`}>
-            <header>
-                <Header />
-            </header>
-            <main>
-                <Form />
-            </main>
-            <ScrollTopButton />
-            <footer>
-                <Footer />
-            </footer>
+        <div className={styles.loader}>
+            <div className={`${styles.app} ${themeClass}`}>
+                <header>
+                    <Header />
+                </header>
+                <main>
+                    <Form />
+                </main>
+                    <ScrollTopButton />
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
         </div>
     )
 }

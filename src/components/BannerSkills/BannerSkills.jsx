@@ -2,13 +2,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
 import cv from "../../assets/data/cv/cv.pdf"
-
 import styles from "./bannerSkills.module.scss";
-
 import skills from "../../assets/images/skills/skills.webp"
-
 import { useContext } from "react";
-
 import { languageContext } from "../Context/ContextLang";
 import traduction from "../../assets/data/traduction";
 import { useTheme } from "../Context/ContextTheme";

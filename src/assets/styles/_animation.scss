@@ -1,15 +1,17 @@
-@keyframes topBottom {
+
+@keyframes LoadingPage {
     from {
-        //transform: translateY(-3px);
-        transform: scale(1);
+        opacity : 0;
+    } to {
+        opacity: 1;
     }
-    50% {
-        //transform: translateY(6px);
-        transform: scale(1.05);
-    }
-    to {
-        //transform: translateY(-3px);
-        transform: scale(1);
+};
+
+@keyframes LoadingPageActive {
+    from {
+        opacity : 0;
+    } to {
+        opacity: 1;
     }
 }
 

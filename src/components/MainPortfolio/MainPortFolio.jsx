@@ -77,6 +77,7 @@ function MainPortfolio() {
                             date={useLanguage.projects[project.id].date}
                             link={project.link}
                             imageProjectSrc={project.image}
+                            stacks={project.stackLogo}
                             logoProjectSrc={project.logo}
                         />
                     </Link> 

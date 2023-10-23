@@ -1,13 +1,25 @@
 @import "./mixin";
 @import "./colorLogo";
+@import "./animation";
 
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.loader {
+    position: absolute;
+    z-index: 99999;
+    animation: LoadingPage 1250ms ease-in-out;
+    width: 100%;
+
+    &.loaderActive {
+        animation: none;
+    }
 }
 
 .app {
-    font-family: 'Dosis', sans-serif;
     min-width: 320px;
     margin: 0 auto;
     display: flex;
@@ -29,3 +41,6 @@ body {
         align-items: center;
     }
 }
+
+
+  

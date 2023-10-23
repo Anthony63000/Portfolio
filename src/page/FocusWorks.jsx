@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { languageContext } from "../components/Context/ContextLang";
 import traduction from "../assets/data/traduction";
 import { useTheme } from "../components/Context/ContextTheme";
+import { useEffect, useState } from "react";
 
 function FocusWorks() {
 
@@ -29,34 +30,45 @@ function FocusWorks() {
     } else {
         themeClass = styles.dark
     }
-    
-    return (
-        <div className={`${styles.app} ${themeClass}`}>
-            <Header />
-            <BannerFocusWorks 
-                imageBanner={workSelected.image}
-                link={workSelected.link}
-                linkText={useLanguage.BannerFocusVisit}
-                returnButton={useLanguage.BannerFocusReturn}
-            />
-            <div className={styles.mainContainer}>
-                <FocusWorkFeature 
-                    title={useLanguage.projects[id].title}
-                    themeText={useLanguage.projects[id].theme}
-                    natureText={useLanguage.projects[id].nature}
-                    assignmentText={useLanguage.projects[id].description}
-                    dateText={useLanguage.projects[id].date}
-                    linkText={workSelected.link}
-                />
 
-                <FocusWorkStack 
-                    workSelected={workSelected}
-                    stackImage={workSelected.stackLogo}
-                    title={useLanguage.stackTechTitle}
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setIsLoading(false);
+        setTimeout(() => {
+            setIsLoading(true);
+        }, 1250); 
+    }, [id]);
+
+    return (
+        <div className={ isLoading ? `${styles.loader} ${styles.loaderActive}` : styles.loader} >
+            <div className={`${styles.app} ${themeClass}`}>
+                <Header />
+                <BannerFocusWorks 
+                    imageBanner={workSelected.image}
+                    link={workSelected.link}
+                    linkText={useLanguage.BannerFocusVisit}
+                    returnButton={useLanguage.BannerFocusReturn}
                 />
+                <div className={styles.mainContainer}>
+                    <FocusWorkFeature 
+                        title={useLanguage.projects[id].title}
+                        themeText={useLanguage.projects[id].theme}
+                        natureText={useLanguage.projects[id].nature}
+                        assignmentText={useLanguage.projects[id].description}
+                        dateText={useLanguage.projects[id].date}
+                        linkText={workSelected.link}
+                    />
+
+                    <FocusWorkStack 
+                        workSelected={workSelected}
+                        stackImage={workSelected.stackLogo}
+                        title={useLanguage.stackTechTitle}
+                    />
+                </div>
+                <PrevOrNextProject />
+                <Footer />
             </div>
-            <PrevOrNextProject />
-            <Footer />
         </div>
     )
 }

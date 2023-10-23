@@ -8,6 +8,7 @@ function Work({
     altImage,
     title,
     type,
+    stacks,
     date
 }) {
 
@@ -35,6 +36,16 @@ function Work({
                     <p className={styles.type}>
                         {type}
                     </p>
+                    <div className={styles.imageContainer}>
+                        {stacks.map((item, index) => (
+                            <img 
+                                key={index} 
+                                src={item} 
+                                alt="Stacks du projets" 
+                                className={styles.stackImage}
+                            />
+                        ))}
+                    </div>
                     <p className={styles.date}>
                         {date}
                     </p>

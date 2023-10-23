@@ -20,18 +20,20 @@ function Portfolio() {
     }
 
     return (
-        <div className={`${styles.app} ${themeClass}`}>
-            <header>
-                <Header />
-            </header>
-            <main>
-                <BannerPortfolio />
-                <MainPortfolio />
-            </main>
-                <ScrollTopButton />
-            <footer>
-                <Footer />
-            </footer>
+        <div className={styles.loader}>
+            <div className={`${styles.app} ${themeClass}`}>
+                <header>
+                    <Header />
+                </header>
+                <main>
+                    <BannerPortfolio />
+                    <MainPortfolio />
+                </main>
+                    <ScrollTopButton />
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
         </div>
     )
 }
