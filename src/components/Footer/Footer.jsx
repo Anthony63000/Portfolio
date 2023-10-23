@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom"
 import traduction from "../../assets/data/traduction"
 import { useContext } from "react"
 import { languageContext } from "../Context/ContextLang"
+import { useTheme } from '../Context/ContextTheme';
 
 function Footer() {
 
@@ -12,8 +13,15 @@ function Footer() {
     const linkClass = "fa-brands fa-linkedin fa-xl"
 
     const { language } = useContext(languageContext);
-
     const useLanguage = traduction[language]; 
+
+    let themeClass;
+    const { theme } = useTheme();
+    if(theme === 'light') {
+        themeClass = styles.light
+    } else {
+        themeClass = styles.dark
+    }
 
     return (
         <div className={styles.container}>
@@ -24,7 +32,7 @@ function Footer() {
             </div>
             <div className={styles.middle}>
                 <NavLink 
-                    className={styles.link}
+                    className={`${styles.link} ${themeClass}`}
                     to="https://github.com/Anthony63000?tab=repositories"
                     target="_blank"
                 >

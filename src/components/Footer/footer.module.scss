@@ -40,6 +40,10 @@
 
         .link:first-child {
             color: black;
+
+            &.dark {
+                color: white;
+            }
         }
 
         .link:last-child {

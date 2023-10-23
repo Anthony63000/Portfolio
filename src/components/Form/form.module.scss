@@ -30,7 +30,10 @@
             width: fit-content;
 
             &.dark {
-                color: white;
+                background-image: linear-gradient(to left, white, #5138BC);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
             }
 
             @include XS {
@@ -166,6 +169,10 @@
                     font-weight: 700;
                     margin: 0;
                     margin-top: 25px;
+
+                    &.dark {
+                        color: white;
+                    }
 
                     @include XS {
                         margin-top: 15px;

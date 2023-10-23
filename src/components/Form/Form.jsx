@@ -164,7 +164,9 @@ function Form() {
                         </button>
                     </form>
                     <div className={styles.altContainer}>
-                        <p className={styles.altText}>{useLanguage.contactOr}</p>
+                        <p className={`${styles.altText} ${themeClass}`}>
+                            {useLanguage.contactOr}
+                        </p>
                         <div 
                             className={`${styles.mailContainer} ${textIsCopied ? 
                             styles.active
