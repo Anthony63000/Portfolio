@@ -22,7 +22,7 @@ root.render(
           <ScrollToTop />
           <DarkLightModeButton />
           <Routes>
-            <Route path="/Portfolio" element={<Home />}/>
+            <Route path="/" element={<Home />}/>
             <Route path="/Works" element={<Portfolio key="portfolio"/>}/>
             <Route path='/Works/:id' element={<FocusWorks />}/>
             <Route path='/Competences' element={<Skills key="skills"/>}/>

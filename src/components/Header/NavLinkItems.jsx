@@ -17,7 +17,7 @@ function NavLinkItems() {
     return (
         <nav className={styles.navigation}>
             <NavLinkItem 
-                link="/Portfolio"
+                link="/"
                 item={<i className={`${logoClass} ${styles.logo}`}></i>}
             />
             <NavLinkItem 
