@@ -25,7 +25,7 @@ function Portfolio() {
                 <header>
                     <Header />
                 </header>
-                <main>
+                <main className={styles.mainContainer}>
                     <BannerPortfolio />
                     <MainPortfolio />
                 </main>

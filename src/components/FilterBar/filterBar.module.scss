@@ -63,8 +63,8 @@
                 animation: WorkHoverBis 500ms ease forwards;
                 
                 &.dark {
-                    color: black;
-                    text-shadow: 0 0 10px white;
+                    color: bisque;
+                    //text-shadow: 0 0 10px white;
                 }
             }
 
@@ -80,7 +80,7 @@
         }
 
         .activeFilter {
-            transform: scale(1.10);
+            transform: scale(1.15);
             margin: 0;
 
             &.dark {
@@ -91,7 +91,8 @@
                 color: #5138BC;
 
                 &.dark {
-                    color: black;
+                    color: bisque;
+                    text-shadow: 0 0 10px black;
                 }
             }
 
@@ -99,7 +100,8 @@
                 color: #5138BC;
 
                 &.dark {
-                    color: black;
+                    color: bisque;
+                    text-shadow: 0 0 10px black;
                 }
             }
         }

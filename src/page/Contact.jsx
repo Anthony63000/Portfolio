@@ -22,7 +22,7 @@ function Contact() {
                 <header>
                     <Header />
                 </header>
-                <main>
+                <main className={styles.mainContainer}>
                     <Form />
                 </main>
                     <ScrollTopButton />

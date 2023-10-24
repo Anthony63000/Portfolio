@@ -28,14 +28,14 @@ function Home() {
             <header>
               <Header />
             </header>
-            <main>
+            <main className={styles.mainContainer}>
               <Banner job={traduction[language].job} />
               <AboutMe
                 imageMeSrc={Me}
                 title={traduction[language].aboutMeTitle}
                 subTitle={traduction[language].aboutMeSubtitle}
                 text={traduction[language].aboutMeText}
-                altText={traduction[language].aboutMeSubtext}
+                altTextMe={traduction[language].aboutMeSubtext}
                 link={traduction[language].aboutMeLink}
               />
               <FrontProject

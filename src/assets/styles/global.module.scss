@@ -27,6 +27,12 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     background-color: white;
+    min-height: 100vh;
+
+
+    @include XL {
+        padding: 0;
+    }
 }
 
 .dark {
@@ -34,13 +40,21 @@ body {
     color: white;
 }
 
-.mainContainer {
+.mainContainerFocus {
     display: flex;
     width: 100%;
     
     @include M {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.mainContainer {
+    padding: 0 100px;
+
+    @include XL {
+        padding: 0;
     }
 }
 

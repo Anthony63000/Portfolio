@@ -25,7 +25,7 @@ function Skills() {
                 <header>
                     <Header />
                 </header>
-                <main>
+                <main className={styles.mainContainer}>
                     <BannerSkills />
                     <Stacks/>
                     <ToolsSkills />

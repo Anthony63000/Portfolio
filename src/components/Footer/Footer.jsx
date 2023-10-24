@@ -37,6 +37,7 @@ function Footer() {
                     target="_blank"
                 >
                         <i className={`${gitHubLogoClass} ${styles.Icon}`}></i>
+                        <p className={styles.textHidden}>linkedin</p>
                 </NavLink>
                 <NavLink
                     className={styles.link}
@@ -44,6 +45,7 @@ function Footer() {
                     target="_blank"
                 >
                         <i className={`${linkClass} ${styles.Icon}`}></i>
+                        <p className={styles.textHidden}>lien</p>
                 </NavLink>
             </div>
             <div className={styles.copy}>

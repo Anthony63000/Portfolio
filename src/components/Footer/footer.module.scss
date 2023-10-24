@@ -57,6 +57,10 @@
             &:hover {
                 transform: scale(1.15);
             }
+
+            .textHidden {
+                font-size: 0px;
+            }
         }
     }
 

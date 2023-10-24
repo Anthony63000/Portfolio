@@ -18,7 +18,7 @@ function NavLinkItems() {
         <nav className={styles.navigation}>
             <NavLinkItem 
                 link="/"
-                item={<i className={`${logoClass} ${styles.logo}`}></i>}
+                item={<><i className={`${logoClass} ${styles.logo}`}></i><p className={styles.textIdden}>lien</p></>}
             />
             <NavLinkItem 
                 link="/Works"

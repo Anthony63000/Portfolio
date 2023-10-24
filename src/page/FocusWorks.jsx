@@ -43,14 +43,17 @@ function FocusWorks() {
     return (
         <div className={ isLoading ? `${styles.loader} ${styles.loaderActive}` : styles.loader} >
             <div className={`${styles.app} ${themeClass}`}>
-                <Header />
+                <header>
+                    <Header />
+                </header>
+                <main className={styles.mainContainer}>
                 <BannerFocusWorks 
                     imageBanner={workSelected.image}
                     link={workSelected.link}
                     linkText={useLanguage.BannerFocusVisit}
                     returnButton={useLanguage.BannerFocusReturn}
                 />
-                <div className={styles.mainContainer}>
+                <div className={styles.mainContainerFocus}>
                     <FocusWorkFeature 
                         title={useLanguage.projects[id].title}
                         themeText={useLanguage.projects[id].theme}
@@ -67,7 +70,10 @@ function FocusWorks() {
                     />
                 </div>
                 <PrevOrNextProject />
-                <Footer />
+                </main>
+                <footer>
+                    <Footer />
+                </footer>   
             </div>
         </div>
     )
