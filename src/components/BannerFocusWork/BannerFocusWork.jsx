@@ -26,7 +26,7 @@ function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link, returnBu
             />
             <div className={styles.containerButtons}>
                 <NavLink 
-                    className={styles.containerButton}
+                    className={`${styles.containerButton} ${themeClass}`}
                     to="/works"
                 >
                     <i className={logoReturn}></i>
@@ -37,7 +37,7 @@ function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link, returnBu
                     </p>
                 </NavLink>
                 <NavLink 
-                    className={styles.containerButton}
+                    className={`${styles.containerButton} ${themeClass}`}
                     to={link}
                     target="_blank"
                 >

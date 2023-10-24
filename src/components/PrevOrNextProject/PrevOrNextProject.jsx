@@ -47,7 +47,7 @@ function PrevOrNextProject() {
     return (
         <div className={styles.container}>
             {prevProject && (
-                <div className={styles.left} onClick={goToPrevProject}>
+                <div className={`${styles.left} ${themeClass}`} onClick={goToPrevProject}>
                     <p className={`${styles.title} ${themeClass}`}>
                         {useLanguage.previousProject}
                         </p>
@@ -57,7 +57,7 @@ function PrevOrNextProject() {
                 </div>
             )}
             {nextProject && (
-                <div className={styles.right} onClick={goToNextProject}>
+                <div className={`${styles.right} ${themeClass}`}onClick={goToNextProject}>
                     <p className={`${styles.title} ${themeClass}`}>
                         {useLanguage.nextProject}
                         </p>

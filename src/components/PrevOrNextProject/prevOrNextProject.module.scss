@@ -35,13 +35,18 @@
 
         &:hover {
             transform: scale(1.05);
+            
+            &.dark {
+                box-shadow: 0 0 10px white;
+                border-radius: 5px;
+            }
         }
 
         &:hover .title {
             color: #5138BC;
 
             &.dark {
-                color: black;
+                color: bisque;
             }
         }
     }
@@ -62,13 +67,18 @@
 
         &:hover {
             transform: scale(1.05);
+
+            &.dark {
+                box-shadow: 0 0 10px white;
+                border-radius: 5px;
+            }
         }
 
         &:hover .title {
             color: #5138BC;
 
             &.dark {
-                color: black;
+                color: bisque;
             }
         }
     }
