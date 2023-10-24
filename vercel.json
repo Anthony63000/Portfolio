@@ -3,10 +3,6 @@
       {
         "source": "/Portfolio/(.*)",
         "destination": "/Portfolio/$1"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/"
       }
     ]
   }
