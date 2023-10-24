@@ -1,16 +1,16 @@
 {
     "rewrites": [
       {
-        "source": "/Portfolio/(.*)",
-        "destination": "/Portfolio/$1"
-      },
-      {
         "source": "/Portfolio",
         "destination": "/Portfolio"
       },
       {
+        "source": "/Portfolio/(.*)",
+        "destination": "/Portfolio/$1"
+      },
+      {
         "source": "/(.*)",
-        "destination": "/"
+        "destination": "/$1"
       }
     ]
   }
