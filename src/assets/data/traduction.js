@@ -138,7 +138,7 @@ const traduction = {
             },
             
             9: {
-                title: "To Do List - Application d'enregistrement de tâches",
+                title: "To Do List - Application d'enregistrement de tâches ( Projet en cours )",
                 theme: "Développement Web",
                 nature: "Projet personel",
                 description:"Pour approfondir mes connaissances en programmation, je me suis lancé le défi de créer une application de liste de tâches avec un serveur et une base de données afin de stocker les informations entrées par l'utilisateur. L'objectif était d'élargir mes compétences dans le domaine du back-end. Dans cette application, j'ai mis en place un serveur ainsi qu'une API pour permettre la communication avec celui-ci. Les utilisateurs ont la possibilité de créer un compte et d'accéder à leur page de profil, où ils peuvent créer de nouvelles collections et ajouter des tâches à ces collections.",

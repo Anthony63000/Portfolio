@@ -40,6 +40,12 @@ function FrontProject(
     } else {
         themeClass = styles.dark
     }
+
+    const [modalImage, setModalImage] = useState(false)
+
+    const toggleModal = () => {
+        setModalImage(!modalImage)
+    }
     
     return (
         <div className={styles.container}>
@@ -52,17 +58,17 @@ function FrontProject(
                 </p>
             </div>
             <div className={styles.middle}>
-            <div className={`${styles.left} ${styles.imageContainer}`}>
-                {frontProject.map((project, index) => (
-            <img
-              key={index}
-              className={`${styles.image} ${
-                index === currentIndex ? styles.activeImage : ""
-              } ${themeClass}`}
-              src={project.image}
-              alt={project.altText}
-            />
-          ))}
+                <div className={`${styles.left} ${styles.imageContainer}`}>
+                    {frontProject.map((project, index) => (
+                        <img
+                        key={index}
+                        className={`${styles.image} ${
+                            index === currentIndex ? styles.activeImage : ""
+                        } ${themeClass}`}
+                        src={project.image}
+                        alt={project.altText}
+                        />
+                    ))}
                 </div>
                 <div className={styles.right}>
                     <div className={styles.techContainer}>
@@ -80,6 +86,12 @@ function FrontProject(
                     <p className={styles.textProject}>
                         {projectText}
                     </p>
+                    <button 
+                        className={`${styles.zoomProject} ${themeClass}`}
+                        onClick={toggleModal}
+                    >
+                        Voir plus
+                    </button>
                 </div>
             </div>
             <div className={styles.bottom}>
@@ -92,6 +104,22 @@ function FrontProject(
                     </NavLink>
                 </div>
             </div>
+            {modalImage && (
+                <div className={styles.modalContainer} onClick={toggleModal}>
+                    <div className={styles.imageModalContainer}>
+                    {frontProject.map((project, index) => (
+                        <img
+                        key={index}
+                        className={`${styles.imageModal} ${
+                            index === currentIndex ? styles.activeImageModal : ""
+                        } ${themeClass}`}
+                        src={project.image}
+                        alt={project.altText}
+                        />
+                    ))}
+                </div>
+                </div>
+            )}
         </div>
     )
 }

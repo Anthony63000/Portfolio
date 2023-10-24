@@ -75,16 +75,26 @@
                 left: 0;
                 width: 80%;
                 border: 1px solid rgba(128,128,128, 0.1);
-                height: 300px;
-                margin: 45px;
-                padding: 10px 0;
+                height: 400px;
+                margin: 45px 100px;
+                padding: 20px;
                 object-fit: contain;
                 border-radius: 5px;
                 opacity: 0;
                 transition: opacity 2s ease-in-out;
+                width: fit-content;
 
                 &.dark {
                     box-shadow: 0 0 10px white;
+                }
+
+                @include XL {
+                    margin: 45px;
+                    height: 300px;
+                }
+
+                @include L {
+                    height: 250px;
                 }
 
                 @include M {
@@ -112,7 +122,15 @@
         .imageContainer {
             position: relative;
             width: 50%;
-            height: 350px; 
+            height: 475px; 
+
+            @include XL {
+                height: 390px;
+            }
+
+            @include L {
+                height: 325px;
+            }
 
             @include XS {
                 height: 180px;
@@ -177,6 +195,32 @@
                     font-size: 16px;
                 }
             }
+
+            .zoomProject {
+                background-color: #5138BC;
+                color: white;
+                width: fit-content;
+                padding: 15px 20px;
+                border-radius: 10px;
+                margin: 35px auto 0 auto;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 12px;
+                font-family: 'Dosis', sans-serif;
+                box-shadow:  1px 2px 4px black;
+                font-weight: 700;
+                transition: all 250ms ease-in-out;
+                cursor: pointer;
+
+                &.dark {
+                    background: linear-gradient(160deg,#5138BC, white);
+                    color: black;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
         }
     }
 
@@ -218,6 +262,40 @@
 
                 &:hover {
                     transform: scale(1.05);
+                }
+            }
+        }
+    }
+    .modalContainer {
+        position: fixed;
+        z-index: 9999;
+        background-color: rgba(0 ,0 ,0 , 0.8);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .imageModalContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 60%;
+
+            .imageModal {
+                width: 100%;
+                opacity: 0;
+                position: absolute;
+                border-radius: 5px;
+                box-shadow: 0 0 50px white;
+                z-index: 99999;
+                animation: carrouselleFront 500ms ease;
+
+                &.activeImageModal {
+                    opacity: 1;
                 }
             }
         }
