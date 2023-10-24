@@ -108,8 +108,8 @@
                 }
 
                 @include XS {
-                    left: 30px;
-                    width: 80%;
+                    left: 20px;
+                    width: 74%;
                     height: 200px;
                 }
 
@@ -211,6 +211,7 @@
                 font-weight: 700;
                 transition: all 250ms ease-in-out;
                 cursor: pointer;
+                border: none;
 
                 &.dark {
                     background: linear-gradient(160deg,#5138BC, white);
@@ -284,6 +285,14 @@
             justify-content: center;
             position: relative;
             width: 60%;
+
+            @include M {
+                width: 70%;
+            }
+
+            @include XS {
+                width: 95%;
+            }
 
             .imageModal {
                 width: 100%;
