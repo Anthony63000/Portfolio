@@ -1,18 +1,5 @@
 {
-    "rewrites": [
-      {
-        "source": "/Portfolio",
-        "destination": "/Portfolio"
-      },
-      {
-        "source": "/Portfolio/(.*)",
-        "destination": "/Portfolio/$1"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/$1"
-      }
+    "rewrites" : [
+        {"source": "/(.*)", "destination": "/"}
     ]
-  }
-  
-  
+}
