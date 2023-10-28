@@ -47,13 +47,6 @@ function AboutMe({ imageMeSrc,
                     </NavLink>
                 </div>
             </div>
-            <div className={styles.right}>
-                <img 
-                    className={`${styles.image} ${theme === "light" ? "" : styles.dark}`}
-                    src={imageMeSrc} 
-                    alt={altTextMe} 
-                />
-            </div>
         </section>
     )
 }

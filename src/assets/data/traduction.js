@@ -53,6 +53,7 @@ const traduction = {
         positivitiDescription: "Les développeurs positifs abordent les défis avec une attitude constructive. Plutôt que de voir les problèmes comme des obstacles insurmontables, ils les considèrent comme des opportunités d'apprentissage et de croissance.",
 
         contactTitle : "Contacte - moi", 
+        contactSubTitle : "Si tu souhaite me contacter, c'est ici que ça se passe",
         contactPrenom : "*Prénom :",
         contactPrenomplaceholder : "Ton Prénom",
         contactEmailPlaceholder : "Ton Email",
@@ -204,6 +205,7 @@ const traduction = {
         positivitiDescription: "Positive developers approach challenges with a constructive attitude. Instead of viewing problems as insurmountable obstacles, they see them as opportunities for learning and growth.",
 
         contactTitle : "contact-me",
+        contactSubTitle : "If you wish to contact me, this is where it happens.",
         contactPrenom : "*First Name :",
         contactPrenomplaceholder : "Your First Name",
         contactEmailPlaceholder : "Your Email",

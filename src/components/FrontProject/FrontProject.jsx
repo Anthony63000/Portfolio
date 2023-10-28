@@ -42,11 +42,15 @@ function FrontProject(
     }
 
     const [modalImage, setModalImage] = useState(false)
+    const [closing, setClosing] = useState(false)
 
     const toggleModal = () => {
-        setModalImage(!modalImage)
-    }
-    
+        setClosing(true); 
+        setTimeout(() => {
+            setModalImage(!modalImage); 
+            setClosing(false); 
+        }, 450); 
+    };
     return (
         <div className={styles.container}>
             <div className={styles.top}>
@@ -112,7 +116,7 @@ function FrontProject(
                         key={index}
                         className={`${styles.imageModal} ${
                             index === currentIndex ? styles.activeImageModal : ""
-                        } ${themeClass}`}
+                        } ${themeClass} ${closing ? styles.closing : ""}`}
                         src={project.image}
                         alt={project.altText}
                         />

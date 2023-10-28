@@ -13,6 +13,7 @@ import { languageContext } from "../components/Context/ContextLang";
 import traduction from "../assets/data/traduction";
 import { useTheme } from "../components/Context/ContextTheme";
 import { useEffect, useState } from "react";
+import ModalFocusWorks from "../components/ModalFocusWorks/ModalFocusWorks";
 
 function FocusWorks() {
 
@@ -40,6 +41,12 @@ function FocusWorks() {
         }, 1250); 
     }, [id]);
 
+    const [ modal, setModal ] = useState(false);
+
+    const toggleModal = () => {
+        setModal(!modal)
+    }
+
     return (
         <div className={ isLoading ? `${styles.loader} ${styles.loaderActive}` : styles.loader} >
             <div className={`${styles.app} ${themeClass}`}>
@@ -47,11 +54,18 @@ function FocusWorks() {
                     <Header />
                 </header>
                 <main className={styles.mainContainer}>
+                {modal && (
+                    <ModalFocusWorks
+                        image={workSelected.image}
+                        toggleModal={toggleModal}
+                    />
+                )}
                 <BannerFocusWorks 
                     imageBanner={workSelected.image}
                     link={workSelected.link}
                     linkText={useLanguage.BannerFocusVisit}
                     returnButton={useLanguage.BannerFocusReturn}
+                    toogleModal={toggleModal}
                 />
                 <div className={styles.mainContainerFocus}>
                     <FocusWorkFeature 

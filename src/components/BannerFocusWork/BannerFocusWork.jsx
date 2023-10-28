@@ -2,9 +2,8 @@ import { NavLink } from "react-router-dom"
 import styles from "./bannerFocusWork.module.scss"
 import { useTheme } from "../Context/ContextTheme"
 
-//import data from "../../assets/data/data.json"
 
-function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link, returnButton }) {
+function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link, returnButton, toogleModal }) {
 
     const logoReturn = "fa-solid fa-arrow-left"
     const linkLogo = "fa-solid fa-link"
@@ -23,6 +22,7 @@ function BannerFocusWorks({ imageBanner, altTextBanner, linkText, link, returnBu
                 className={`${styles.image} ${themeClass}`}
                 src={imageBanner} 
                 alt={altTextBanner}
+                onClick={toogleModal}
             />
             <div className={styles.containerButtons}>
                 <NavLink 

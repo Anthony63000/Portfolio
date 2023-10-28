@@ -93,7 +93,7 @@ function Form() {
                     {useLanguage.contactTitle}
                 </h3>
                 <p className={styles.subtitle}>
-                    Si tu souhaite me contacter, c'est ici que ça se passe
+                    {useLanguage.contactSubTitle}
                 </p>
             </div>
             <div className={styles.bottom}>

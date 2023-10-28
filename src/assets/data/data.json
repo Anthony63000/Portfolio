@@ -20,7 +20,8 @@
         "id": 1,
         "category": "HTML&CSS",
         "link": "https://anthony63000.github.io/Booki/",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.png",
+        "textAltImage": "Image du projet Booki",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/booki/cover/booki.webp",
         "logo": "https://anthony63000.github.io/Portfolio/image/logo/booki.png",
         "stacks": [
            "Html", "Css"
@@ -34,8 +35,9 @@
         "id": 2,
         "category": "HTML&CSS",
         "link": "https://anthony63000.github.io/Ohmyfood/",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ohmyfood/cover/ohmyfood.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ohmyfood/cover/ohmyfood.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/ohmyfood.png",
+        "textAltImage": "Image du projet OhMyFood",
         "stacks": [
           "Html", "Sass"
        ],
@@ -48,8 +50,9 @@
         "id": 3,
         "category": "Javascript",
         "link": "https://anthony63000.github.io/Print-it/",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/print-it/cover/print-it.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/print-it/cover/print-it.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/printIt.png",
+        "textAltImage": "Image du projet Print-it",
         "stacks": [
           "Html", "Css", "JavaScript"
        ],
@@ -63,8 +66,9 @@
         "id": 4,
         "category": "React",
         "link": "https://anthony63000.github.io/Kasa/",
-        "image": "https://anthony63000.github.io/Portfolio/image/Site/Accueuil.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/Site/Accueuil.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/kasa.png",
+        "textAltImage": "Image du projet Kasa",
         "stacks": [
           "React", "Sass"
        ],
@@ -77,8 +81,9 @@
         "id": 5,
         "category": "Javascript",
         "link": "https://anthony63000.github.io/NinaCarducci/",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/nina/cover/nina.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/nina/cover/nina.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/nina.png",
+        "textAltImage": "Image du projet de la phtotographe Nina Carducci",
         "stacks": [
           "Html", "Css", "JavaScript", "Bootsrap"
        ],
@@ -93,8 +98,9 @@
         "id": 6,
         "category": "React",
         "link": "https://github.com/Anthony63000/724Events",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/events/events.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/events/events.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/724events.png",
+        "textAltImage": "Image du projet 724 Event",
         "stacks": [
           "React", "Sass"
        ],
@@ -107,8 +113,9 @@
         "id": 7,
         "category": "HTML&CSS",
         "link": "https://github.com/Anthony63000/724Events",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/Riding/riding.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/Riding/riding.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/ridding.png",
+        "textAltImage": "Image du projet Riding Cities",
         "stacks": [
           "Html", "Css"
        ],
@@ -121,8 +128,9 @@
         "id": 8,
         "category": "React",
         "link": "https://github.com/Anthony63000/Argent-Bank",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/argent-bank/argentbank.png",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/argent-bank/argentbank.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/argent.png",
+        "textAltImage": "Image du projet Argent Bank",
         "stacks": [
           "React", "Sass", "Redux"
        ],
@@ -138,6 +146,7 @@
         "link": "https://github.com/Anthony63000/Argent-Bank",
         "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ToDoList/todo.webp",
         "logo":"https://anthony63000.github.io/Portfolio/image/logo/logotodo.webp",
+        "textAltImage": "Image du projet To Do List",
         "stacks": [
           "React", "Sass", "Redux", "NodeJs", "Express", "MongoDB"
        ],

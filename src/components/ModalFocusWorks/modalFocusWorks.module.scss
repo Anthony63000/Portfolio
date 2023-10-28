@@ -1,0 +1,36 @@
+@import "../../assets/styles/animation";
+@import "../../assets/styles/mixin";
+
+.container {
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0 ,0 ,0 , 0.8);
+    width: 100vw;
+    height: 100vh;
+
+    .image {
+        height: 80%;
+        border-radius: 5px;
+        box-shadow: 0 0 50px white;
+        animation: carrouselleFront 500ms ease;
+
+        @include S {
+            height: 60%;
+        }
+
+        @include XS {
+            height: 40%;
+        }
+
+        &.closing {
+            animation: carrouselleFrontBack 500ms ease;
+          }
+    }
+}
+
+.closing {
+    animation: carrouselleFrontBack 500ms ease;
+  }

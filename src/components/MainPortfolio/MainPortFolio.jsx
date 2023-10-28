@@ -67,14 +67,16 @@ function MainPortfolio() {
             <div className={`${styles.right}`}>
                 {filteredProject.map((project, index) => (
                     <Link 
-                    to={`${project.id}`}
-                    className={styles.linkProject}
+                        to={`${project.id}`}
+                        className={styles.linkProject}
+                        key={project.id}
                     >
                         <Work 
                             key={index}
                             title={useLanguage.projects[project.id].title}
                             type={useLanguage.projects[project.id].theme}
                             date={useLanguage.projects[project.id].date}
+                            altImage={project.textAltImage}
                             link={project.link}
                             imageProjectSrc={project.image}
                             stacks={project.stackLogo}
