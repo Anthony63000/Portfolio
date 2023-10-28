@@ -66,6 +66,7 @@ function FocusWorks() {
                     linkText={useLanguage.BannerFocusVisit}
                     returnButton={useLanguage.BannerFocusReturn}
                     toogleModal={toggleModal}
+                    altTextBanner={workSelected.textAltImage}
                 />
                 <div className={styles.mainContainerFocus}>
                     <FocusWorkFeature 
@@ -81,6 +82,7 @@ function FocusWorks() {
                         workSelected={workSelected}
                         stackImage={workSelected.stackLogo}
                         title={useLanguage.stackTechTitle}
+                        stackAltImage={workSelected.stacks}
                     />
                 </div>
                 <PrevOrNextProject />

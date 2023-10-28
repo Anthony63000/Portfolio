@@ -38,16 +38,19 @@ function ToolsSkills() {
                         title="Visual Studio Code"
                         toolImage={VscodeLogo}
                         description={useLanguage.vsCodeDescription}
+                        altToolImage="Logo du logiciel Visual Studio Code"
                     />
                     <ToolSkill 
                         title="Gimp"
                         toolImage={gimpLogo}
                         description={useLanguage.gimpDescription}
+                        altToolImage="Logo du logiciel Gimp"
                     />
                     <ToolSkill 
                         title="Notion"
                         toolImage={notionLogo}
                         description={useLanguage.notionDescription}
+                        altToolImage="Logo de l'application Web Notion"
                     />
                 </div>
             </div>

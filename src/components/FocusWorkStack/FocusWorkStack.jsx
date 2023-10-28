@@ -31,7 +31,7 @@ function FocusWorkStack({ workSelected,
                     >
                         <img 
                             src={stackImage[index]} 
-                            alt={stackAltImage} 
+                            alt={stackAltImage[index]} 
                             className={styles.image}
                         />
                         <p className={styles.stackText}>
