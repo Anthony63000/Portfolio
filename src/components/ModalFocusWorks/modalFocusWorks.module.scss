@@ -12,17 +12,17 @@
     height: 100vh;
 
     .image {
-        height: 80%;
+        width: 60%;
         border-radius: 5px;
         box-shadow: 0 0 50px white;
         animation: carrouselleFront 500ms ease;
 
-        @include S {
-            height: 60%;
+        @include M {
+            width: 70%;
         }
 
         @include XS {
-            height: 40%;
+            width: 95%;
         }
 
         &.closing {
