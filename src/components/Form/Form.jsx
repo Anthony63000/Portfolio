@@ -117,6 +117,7 @@ function Form() {
                             }`}
                             type="text" 
                             name="name" 
+                            id='name'
                             value={firstNameControl}
                             onChange={(event) => { handleChange(event, setFirstNameControl)
                             }}
@@ -135,6 +136,7 @@ function Form() {
                             }`}
                             type="email" 
                             name="email" 
+                            id='email'
                             value={emailControl}
                             onChange={(event) => { handleChange(event, setEmailControl)
                             }}
@@ -150,6 +152,7 @@ function Form() {
                             ${messageControl.length < 800 && messageControl !== "" ? styles.inputOk : styles.inputFalse}
                             `}
                             name="message"
+                            id='name'
                             value={messageControl}
                             onChange={(event) => { handleChange(event, setMessageControl)
                             }}

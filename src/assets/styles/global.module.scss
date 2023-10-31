@@ -6,13 +6,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Dosis', sans-serif;
-    background-color: #5138BC;
 }
 
 .loader {
     position: absolute;
     z-index: 99999;
-    animation: LoadingPage 500ms ease-in-out;
+    animation: LoadingPageActive 500ms ease-in-out;
     width: 100%;
 
     &.loaderActive {

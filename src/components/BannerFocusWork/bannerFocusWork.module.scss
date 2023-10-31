@@ -1,4 +1,5 @@
 @import "../../assets/styles/mixin";
+@import "../../assets/styles/animation";
 
 .container {
     margin-top: 54px;
@@ -18,6 +19,7 @@
         border-radius: 10px;
         box-shadow: 0 0 20px black;
         cursor: pointer;
+        animation: focusWorksImage 2s ease infinite;
 
         &.dark {
             box-shadow: 0 0 20px white;
