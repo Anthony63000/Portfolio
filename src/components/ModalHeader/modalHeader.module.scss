@@ -1,0 +1,107 @@
+
+@import "../../assets/styles/mixin";
+
+.container {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, black, #5138BC);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &.light {
+        background: white;
+        color: black;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navText {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .closeModalStyles {
+            font-size: 20px;
+            padding: 5px 8px;
+            border-radius: 100%;
+            background-color: black;
+
+            &.light {
+                color: white;
+            }
+        }
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+
+       .navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+            height: 100%;
+
+            .modalUlList {
+                padding: 20px 0;
+                border-radius: 5px;
+                box-shadow: 0 0 5px white;
+                width: 40%;
+
+                &.light {
+                    box-shadow: 0 0 5px black;
+                }
+
+                @include XS {
+                    width: 70%;
+                }
+
+                .liListModal {
+                    text-align: center;
+
+                    .linkModal {
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                    }
+
+                    .linkModalActive {
+                        letter-spacing: 2px;
+                    }
+
+                }
+            }
+       }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .link {
+            color: inherit;
+
+            .icon {
+                font-size: 30px;
+            }
+            &:last-child {
+                color:  #0e76a8;
+            }
+        }
+    }
+}

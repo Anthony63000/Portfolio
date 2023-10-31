@@ -1,5 +1,6 @@
 
 @import "../../assets/styles/mixin";
+@import "../../assets/styles/animation";
 
 
 .button {
@@ -16,6 +17,8 @@
     border: 2px solid rgba(128,128,128, 0.4);
     transition: all 250ms ease-in-out;
     color: black;
+    animation: scrolltopButtonAnimation 2s ease infinite;
+    background-color: white;
 
     @include XS {
         height: 30px;

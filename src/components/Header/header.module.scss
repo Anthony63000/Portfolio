@@ -63,6 +63,10 @@
 
                     list-style-type: none;
                     box-sizing: border-box;
+
+                    &:hover {
+                        animation: WorkHoverBis 300ms ease forwards; 
+                    }
                     
                     .textIdden {
                         font-size: 0px;
@@ -75,7 +79,7 @@
                         font-size: 18px;
                         box-sizing: border-box;
                         font-weight: 500;
-                        transition: all 250ms ease-in-out;
+                        transition: all 300ms ease-in-out;
 
                         &.dark {
                             color: white;
@@ -109,12 +113,13 @@
             align-items: center;
             gap: 15px;
             cursor: pointer;
-            transition: all 250ms ease-in-out;
+            transition: all 300ms ease-in-out;
 
             &.dark {
                 &:hover {
                     color: bisque;
                     text-shadow: 0 0 10px black;
+                    animation: WorkHoverBis 300ms ease forwards; 
                 }
             }
 
@@ -136,98 +141,4 @@
                 display: flex;
             }
         } 
-
-        .modal {
-            position: fixed;
-            z-index: 999999;
-            right: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            color: white;
-            
-            .top {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 50px;
-                padding: 10px 20px;
-                background-color: black;
-
-                .navigationTilte {
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    letter-spacing: 3px;
-                }
-
-                i {
-                    color: white;
-                }
-                
-            }
-
-            .contentContainer {
-
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: black;
-                
-                & .navigation {
-                    margin-top: 30px;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    width: 100%;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-
-                    .ulList {
-                        width: 45%;
-                        border: 1px solid;
-                        padding: 40px;
-                        border-style: dotted;
-                        margin: 0;
-                    }
-                        
-                    .link {
-                        color: white;
-                    }
-                }
-            }
-            
-            .network {
-                margin-top: 200px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                & .container {
-                    display: flex;
-                    border: none;
-                    background-color: black;
-                    gap: 40px;
-
-                    @include M {
-                        display: flex;
-                    }
-
-                    .link {
-                        color: white;
-                        padding: 40px 0;
-                        border-style: dotted;
-                        width: 134px;
-                        text-align: center;
-
-                        &:hover {
-                            font-weight: 400;
-                        }
-                    }
-                }
-            }
-        }
     }

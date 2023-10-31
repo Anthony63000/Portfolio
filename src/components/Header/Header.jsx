@@ -3,10 +3,10 @@ import styles from "../Header/header.module.scss"
 import { useContext, useState } from "react";
 
 import NavLinkItems from "./NavLinkItems"
-import MyNetwork from "../MyNetwork/MyNetwork";
 import { languageContext } from "../Context/ContextLang";
 import LogoEntreprise from "../LogoEntreprise/LogoEntreprise";
 import { useTheme } from "../Context/ContextTheme";
+import ModalHeader from "../ModalHeader/ModalHeader";
 
 function Header() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -33,7 +33,6 @@ function Header() {
 
     const langageClass = "fa-solid fa-language fa-xl";
     const burgerClass = "fa-solid fa-bars fa-xl"
-    const closeClass = "fa-solid fa-circle-xmark fa-xl"
 
     const { theme } = useTheme()
 
@@ -61,25 +60,11 @@ function Header() {
                         <i className={burgerClass}></i>
                 </div>  
                 {modalIsOpen && (
-                <div className={styles.modal}>
-                    <div className={styles.top}>
-                        <p className={styles.navigationTilte}>Navigation</p>
-                        <i 
-                            className={closeClass}
-                            onClick={openModal}
-                        >
-                        </i>
-                    </div>
-                    <div className={styles.contentContainer}>
-                        <NavLinkItems />
-                    </div>
-                    <div className={styles.network}>
-                        <MyNetwork />
-                    </div>
-                </div>
-            )}
+                    <ModalHeader 
+                        closeModal={openModal}
+                    />
+                )}
             </div>
-           
     )
 }
 
