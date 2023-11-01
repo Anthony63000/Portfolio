@@ -159,6 +159,24 @@
           "https://anthony63000.github.io/Portfolio/image/stack/express-109.svg",
           "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon-2.svg"
       ]
+      },
+      {
+        "id": 10,
+        "category": "Javascript",
+        "link": "https://anthony63000.github.ioSophieBluel/Sophie.webp",
+        "image":"https://anthony63000.github.io/Portfolio/image/SophieBluel/Sophie.webp",
+        "textAltImage": "Image du portfolio de Sophie Bluel",
+        "stacks": [
+          "Html", "Css", "JavaScript", "NodeJs", "Express", "MongoDB"
+       ],
+       "stackLogo": [
+          "https://anthony63000.github.io/Portfolio/image/stack/html-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/css-3.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/logo-javascript.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/nodejs-1.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/express-109.svg",
+          "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon-2.svg"
+      ]
       }
     ]
 }
