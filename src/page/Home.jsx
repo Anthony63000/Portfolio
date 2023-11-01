@@ -14,6 +14,7 @@ import traduction from "../assets/data/traduction";
 function Home() {
   
   const { language } = useContext(languageContext);
+  const useLanguage = traduction[language]
   const { theme } = useTheme();
   let themeClass;
   if (theme === "light") {
@@ -29,21 +30,22 @@ function Home() {
               <Header />
             </header>
             <main className={styles.mainContainer}>
-              <Banner job={traduction[language].job} />
+              <Banner job={useLanguage.job} />
               <AboutMe
                 imageMeSrc={Me}
-                title={traduction[language].aboutMeTitle}
-                subTitle={traduction[language].aboutMeSubtitle}
-                text={traduction[language].aboutMeText}
-                altTextMe={traduction[language].aboutMeSubtext}
-                link={traduction[language].aboutMeLink}
+                title={useLanguage.aboutMeTitle}
+                subTitle={useLanguage.aboutMeSubtitle}
+                text={useLanguage.aboutMeText}
+                altTextMe={useLanguage.aboutMeSubtext}
+                link={useLanguage.aboutMeLink}
               />
               <FrontProject
-                title={traduction[language].frontProjectTitle}
-                subTitle={traduction[language].frontProjectSubTitle}
-                titleProject={traduction[language].frontProjectProjectTitle}
-                projectText={traduction[language].frontProjectProjectText}
-                link={traduction[language].frontProjectLink}
+                title={useLanguage.frontProjectTitle}
+                subTitle={useLanguage.frontProjectSubTitle}
+                titleProject={useLanguage.frontProjectProjectTitle}
+                projectText={useLanguage.frontProjectProjectText}
+                link={useLanguage.frontProjectLink}
+                seeMore={useLanguage.buttonMore}
               />
             </main>
             <ScrollTopButton />

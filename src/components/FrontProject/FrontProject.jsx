@@ -14,7 +14,8 @@ function FrontProject(
         subTitle,
         titleProject,
         projectText,
-        link
+        link,
+        seeMore
     }
 ) {
 
@@ -94,7 +95,7 @@ function FrontProject(
                         className={`${styles.zoomProject} ${themeClass}`}
                         onClick={toggleModal}
                     >
-                        Voir plus
+                        {seeMore}
                     </button>
                 </div>
             </div>

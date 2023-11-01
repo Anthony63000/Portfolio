@@ -8,7 +8,7 @@ import traduction from "../../assets/data/traduction";
 
 import Filter from "./Filter"
 
-function FilterBar( {onFilterChange} ) {
+function FilterBar({ onFilterChange }) {
 
     const [selectedCategory, setSelectedCategory] = useState(null);
 

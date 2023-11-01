@@ -11,7 +11,7 @@ const traduction = {
 
         aboutMeTitle : "Développeur Web Front-End",
         aboutMeSubtitle : "Que suis-je capable de faire ?",
-        aboutMeText : "Je suis capable de développer des projets Web, de la landing page à l'application Web, de plus, j'ai une aspiration pour les projets innovants.",
+        aboutMeText : "Je suis capable de développer des projets Web, de la landing page à l'application Web. De plus, j'ai une aspiration pour les projets innovants.",
         aboutMeSubtext : "De la préparation en passant par la création, l'optimisation ou bien le débugage d'un projet Web.",
         aboutMeLink : "En savoir plus",
 
@@ -20,6 +20,7 @@ const traduction = {
         frontProjectProjectTitle :"Application Web - Kasa",
         frontProjectProjectText : "Kasa est une application web qui est destinée à des particuliers qui souhaitent louer un appartement pour leur vacances. Ce projet est composé d'une page d'accueil avec des cartes qui correspondent à des locations immobilières. Une fois que l'utilisateur accède à un logement, il va pouvoir avoir accès aux différentes caractéristiques de la location.",
         frontProjectLink : "Consulte mon porfolio",
+        buttonMore: "Voir plus",
 
         footerTitle : "Retrouvez - moi sur",
         footerCopy : "© 2023 Borel Anthony. Tous droits réservés.",
@@ -53,7 +54,7 @@ const traduction = {
         positivitiDescription: "Les développeurs positifs abordent les défis avec une attitude constructive. Plutôt que de voir les problèmes comme des obstacles insurmontables, ils les considèrent comme des opportunités d'apprentissage et de croissance.",
 
         contactTitle : "Contacte - moi", 
-        contactSubTitle : "Si tu souhaite me contacter, c'est ici que ça se passe",
+        contactSubTitle : "Si tu souhaites me contacter, c'est ici que ça se passe",
         contactPrenom : "*Prénom :",
         contactPrenomplaceholder : "Ton Prénom",
         contactEmailPlaceholder : "Ton Email",
@@ -81,7 +82,7 @@ const traduction = {
                 title: "Booki - Page d'accueil d'une agence de voyage",
                 theme: "Intégration Web",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en alternance dans une start-up du nom de Booki, l'entreprise voulait développer un site qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. On m'a donc confié la tâche de l'intégration de l'interface du site à partir de la maquette du designer (maquette Figma) et des spécifications fonctionnelles de ma CTO.",
+                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en alternance dans une start-up du nom de Booki. L'entreprise voulait développer un site qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. On m'a donc confié la tâche de l'intégration de l'interface du site à partir de la maquette du designer (maquette Figma) et des spécifications fonctionnelles de ma CTO.",
                 date: "Mars 2023",
 
             },
@@ -89,7 +90,7 @@ const traduction = {
                 title: "OhMyFood - Répertoire de restaurants en ligne",
                 theme: "Intégration Web",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais en tant que développeur junior au sein d'une jeune startup du nom de Ohmyfood. Ma mission était d'intégrer le site grâce aux maquettes du designer et des consignes de mon CTO, ce projet intègre le préprocesseur Sass à la place du Css classique et c'est ici que j'ai mis en oeuvre mes premières animations CSS",
+                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, j'ai dû intégrer ce projet avec les langages HTML et CSS. Dans le contexte de ce projet j'étais développeur junior au sein d'une jeune startup du nom de Ohmyfood. Ma mission était d'intégrer le site grâce aux maquettes du designer et des consignes de mon CTO. Ce projet intègre le préprocesseur Sass à la place du Css classique et c'est ici que j'ai mis en oeuvre mes premières animations CSS",
                 date: "Mars 2023",
 
             },
@@ -97,7 +98,7 @@ const traduction = {
                 title: "Print-it - Page d'accueil d'une imprimerie",
                 theme: "Intégration Web",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour dynamiser un site statique avec le langage Javascript. Je suis intervenu dans ce projet au niveau de la bannière que j'ai rendue dynamique en intégrant un carrousel avec des images qui défilent.",
+                description: "Durant ce projet que j'ai réalisé pendant ma formation, je suis développeur freelance et je décroche une offre pour dynamiser un site statique avec le langage Javascript. Je suis intervenu dans ce projet au niveau de la bannière que j'ai rendue dynamique en intégrant un carrousel avec des images qui défilent.",
                 date: "Avril 2023",
 
             },
@@ -105,14 +106,14 @@ const traduction = {
                 title: "Kasa - Application web",
                 theme: "Intégration Web",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancer dans l'intégration de ce projet. J'ai donc intégré l'application complète avec React.",
+                description: "Durant ce projet que j'ai réalisé pendant ma formation, je suis développeur freelance et je décroche une offre pour la refonte totale du site avec la bibliothèque React. En collaboration avec ma CTO et le design je me suis lancé dans l'intégration de ce projet. J'ai donc intégré l'application complète avec React.",
                 date: "Juillet 2023",
             },
             5: {
                 title: "Nina Cardduci - Optimisation du site",
                 theme: "Optimisation du site",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet je débute en tant que développeur freelance et je décroche une offre pour l'optimisation du SEO du site de Nina Cardduci, une photographe localisée à Bordeaux. Ici je me suis occupé d'optimiser le site que ce soit en matière de performance mais aussi en matière d'accèssibilité et de SEO. J'ai aussi mis en place des balises méta pour configurer le lien du site sur les réseaux sociaux ainsi que la mise en place de résultat enrichie pour configurer l'affichage du site sur Google.",
+                description: "Durant ce projet réalisé pendant ma formation chez Openclassrooms, je débute en tant que développeur freelance et je décroche une offre pour l'optimisation du SEO du site de Nina Cardduci, une photographe localisée à Bordeaux. Ici je me suis occupé d'optimiser le site que ce soit en matière de performance mais aussi en matière d'accèssibilité et de SEO. J'ai aussi mis en place des balises méta pour configurer le lien du site sur les réseaux sociaux ainsi que la mise en place de résultats enrichies pour configurer l'affichage du site sur Google.",
                 date: "Août 2023",
 
             },
@@ -120,14 +121,14 @@ const traduction = {
                 title: "724 Events - Débugage de l'application",
                 theme: "Débuggage d'une application",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un développeur web front-end freelance et je décroche une offre pour réparer le site d'une agence d'événementiels. Dans cette mission je me suis occupé de réparer le site mais aussi d'écrire des tests unitaires ainsi que des tests d'intégration pour veiller au bon fonctionnement du site de bout en bout.",
+                description: "Durant ce projet réalisé pendant ma formation chez Openclassrooms, je suis un développeur web front-end freelance et je décroche une offre pour réparer le site d'une agence d'événementiels. Dans cette mission je me suis occupé de réparer le site mais aussi d'écrire des tests unitaires ainsi que des tests d'intégration pour veiller au bon fonctionnement du site de bout en bout.",
                 date: "Août 2023",
             },
             7: {
                 title: "Riding Cites - Intégration HTML",
                 theme: "Intégration Web",
                 nature: "Projet Openclassrooms",
-                description: "Au cours de ma formation Intégrateur web chez Openclassrooms, dans le contexte de ce projet, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
+                description: "Durant ce projet réalisé pendant ma formation chez Openclassrooms, je suis un jeune stagiaire qui rejoint l'agence Webonzai, en collaboration avec mon CTO, il m'a confié la tâche d'intégrer la nouvelle page du site de Riding Cites, une association sportive de skate à partir du code du site existant, dans ce projet je n'avais que du code HTML à développer.",
                 date: "Mars 2023",
             },
             8: {
@@ -171,7 +172,7 @@ const traduction = {
 
         aboutMeTitle : "Front-end Web Developer",
         aboutMeSubtitle: "What can i do ?",
-        aboutMeText : "I am able to develop web projects, from the landing page to the web application, moreover, I have an aspiration for innovative projects.",
+        aboutMeText : "I am able to develop web projects, from the landing page to the web application. Moreover, I have an aspiration for innovative projects.",
         aboutMeSubtext: "From preparation to the creation, optimization or debugging of a web project.",
         aboutMeLink: "Learn more",
 
@@ -180,6 +181,7 @@ const traduction = {
         frontProjectProjectTitle :"Web application - Kasa",
         frontProjectProjectText : "Kasa is a web application that is intended for individuals who wish to rent an apartment for their holidays. This project consists of a homepage with maps that correspond to real estate rentals. Once the user accesses a property, he will be able to access the different characteristics of the rental.",
         frontProjectLink :"Check my portfolio",
+        buttonMore : "See more",
 
         footerTitle : "Find-me on",
         footerCopy : "© 2023 Borel Anthony. All rights reserved.",
@@ -255,14 +257,14 @@ const traduction = {
                 title : "Print-it - Home page of a printing house",
                 theme: "Web Integration",
                 nature: "Openclassrooms Project",
-                description: "During my training as a Web Integrator at Openclassrooms, in the context of this project, I started as a freelance developer and secured an offer to enhance a static site using JavaScript. I worked on this project at the banner level, making it dynamic by integrating a carousel with scrolling images.",
+                description: "During this project that I completed during my training, I am a freelance developer and I secured an opportunity to enhance a static website using JavaScript. My involvement in this project was primarily related to the banner, where I made it dynamic by integrating a carousel with images that scroll.",
                 date: "April 2023",
             },
             4: {
                 title : "Kasa - Web application",
                 theme: "Web Integration",
                 nature: "Openclassrooms Project",
-                description: "During my training as a Web Integrator at Openclassrooms, in the context of this project, I started as a freelance developer and secured an offer for the complete redesign of the site using the React library. In collaboration with my CTO and the design team, I embarked on the integration of this project. I integrated the entire application using React.",
+                description: "During this project that I completed during my training, I am a freelance developer, and I secured an opportunity for a complete overhaul of the website using the React library. In collaboration with my CTO and the design team, I embarked on the integration of this project. I successfully integrated the entire application using React.",
                 date: "July 2023",
 
             },
@@ -270,7 +272,7 @@ const traduction = {
                 title : "Nina Cardduci - Site optimization",
                 theme: "Website Optimization",
                 nature: "Openclassrooms Project",
-                description: "During my training as a Web Integrator at Openclassrooms, in the context of this project, I started as a freelance developer and secured an offer to optimize the SEO of Nina Cardduci's website, a photographer based in Bordeaux. Here, I focused on optimizing the site not only in terms of performance but also in terms of accessibility and SEO. I also implemented meta tags to configure the site link on social networks and set up enriched results for configuring the site's display on Google.",
+                description: "During this project, which I completed as part of my training at Openclassrooms, I started as a freelance developer and secured an offer to optimize the SEO of Nina Carducci's website, a photographer located in Bordeaux. In this role, I focused on optimizing the website for performance, accessibility, and SEO. I also implemented meta tags for configuring the site's appearance on social media platforms and set up structured data for configuring the site's display on Google search results.",
                 date: "August 2023",
             },
             6: {
