@@ -164,7 +164,7 @@
         "id": 10,
         "category": "Javascript",
         "link": "https://anthony63000.github.ioSophieBluel/Sophie.webp",
-        "image":"https://anthony63000.github.io/Portfolio/image/SophieBluel/Sophie.webp",
+        "image":"https://anthony63000.github.io/Portfolio/image/portfolio/SophieBluel/Sophie.webp",
         "textAltImage": "Image du portfolio de Sophie Bluel",
         "stacks": [
           "Html", "Css", "JavaScript", "NodeJs", "Express", "MongoDB"

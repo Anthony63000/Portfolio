@@ -150,7 +150,7 @@ const traduction = {
                 title: "Portfolio Sophie Bluel",
                 theme: "Développement Web",
                 nature: "Projet Openclassrooms",
-                description:"Pour approfondir mes connaissances en programmation, je me suis lancé le défi de créer une application de liste de tâches avec un serveur et une base de données afin de stocker les informations entrées par l'utilisateur. L'objectif était d'élargir mes compétences dans le domaine du back-end. Dans cette application, j'ai mis en place un serveur ainsi qu'une API pour permettre la communication avec celui-ci. Les utilisateurs ont la possibilité de créer un compte et d'accéder à leur page de profil, où ils peuvent créer de nouvelles collections et ajouter des tâches à ces collections.",
+                description:"En tant que développeur front-end au sein de l'agence ArchiWebos, j'ai été assigné à renforcer une équipe travaillant sur la conception du site portfolio d'une architecte d'intérieur. Ma mission principale consiste à créer une page de présentation des travaux de l'architecte en utilisant le code HTML fourni. De plus, je suis chargé de développer la page de connexion de l'administrateur du site (le client), à partir de zéro, pour gérer l'accès aux fonctionnalités de gestion du contenu. Enfin, je devrai créer une modale permettant d'uploader de nouveaux médias, également à partir de zéro, pour permettre à l'administrateur d'ajouter des éléments multimédias au site. Pour accomplir ces tâches, j'ai à ma disposition le design du site (Figma), le code back-end pour la gestion des données, le code front-end d'origine avec la version statique de la page de l'architecte, ainsi qu'un Kanban détaillant les tâches qui me sont attribuées. Mon objectif est de créer une page web dynamique avec JavaScript en respectant les besoins du client et en assurant la convivialité et la fonctionnalité du site portfolio de l'architecte d'intérieur. Je peux compter sur le soutien de l'équipe pour toute question ou assistance nécessaire tout au long de ce projet.",
                 date: "Juin 2023",
 
             }
@@ -302,6 +302,14 @@ const traduction = {
                 nature: "Personal Project",
                 description: "To deepen my programming knowledge, I took on the challenge of creating a task list application with a server and a database to store user-entered information. The goal was to expand my skills in the backend domain. In this application, I set up a server and an API to enable communication with it. Users have the option to create an account and access their profile page, where they can create new collections and add tasks to these collections.",
                 date: "October 2023",
+            },
+            10: {
+                title: "Portfolio Sophie Bluel",
+                theme: "Web Development",
+                nature: "Project Openclassrooms",
+                description:"As a front-end developer at ArchiWebos agency, I have been assigned to support a team working on the design of an interior designer's portfolio website. My main mission is to create a presentation page for the architect's work using the provided HTML code. Additionally, I am responsible for developing the client's administrator login page from scratch, allowing them to access content management features. Lastly, I will need to create a modal for uploading new media, also from scratch, enabling the administrator to add multimedia elements to the site. To accomplish these tasks, I have the website's design (Figma), the back-end code for data management, the original front-end code with the static version of the architect's page, and a Kanban board detailing the tasks assigned to me. My goal is to create a dynamic web page with JavaScript that meets the client's requirements while ensuring user-friendliness and functionality for the interior designer's portfolio site. I can rely on the team for any questions or assistance needed throughout this project.",
+                date: "June 2023",
+
             }
         },
 
