@@ -140,11 +140,11 @@ const traduction = {
             },
             
             9: {
-                title: "To Do List - Application d'enregistrement de tâches ( Projet en cours )",
+                title: "Epopée des compos - Jeu en ligne, Retrouve la composition de ces matchs de légende",
                 theme: "Développement Web",
                 nature: "Projet personel",
-                description:"Pour approfondir mes connaissances en programmation, je me suis lancé le défi de créer une application de liste de tâches avec un serveur et une base de données afin de stocker les informations entrées par l'utilisateur. L'objectif était d'élargir mes compétences dans le domaine du back-end. Dans cette application, j'ai mis en place un serveur ainsi qu'une API pour permettre la communication avec celui-ci. Les utilisateurs ont la possibilité de créer un compte et d'accéder à leur page de profil, où ils peuvent créer de nouvelles collections et ajouter des tâches à ces collections.",
-                date: "Octobre 2023",
+                description:"Dans le cadre d'un projet personnel, j'ai créé cette petite application qui permet de retrouver les noms des joueurs dans des matchs légendaires, en utilisant un système de points et de jokers.",
+                date: "Décembre 2023",
 
             },
             10: {
@@ -299,11 +299,11 @@ const traduction = {
             },
             
             9: {
-                title : "To Do List - Task recording application",
+                title : "Epic Lineups - Online Game, Find the lineup of these legendary matches",
                 theme: "Web Development",
                 nature: "Personal Project",
-                description: "To deepen my programming knowledge, I took on the challenge of creating a task list application with a server and a database to store user-entered information. The goal was to expand my skills in the backend domain. In this application, I set up a server and an API to enable communication with it. Users have the option to create an account and access their profile page, where they can create new collections and add tasks to these collections.",
-                date: "October 2023",
+                description: "As part of a personal project, I've created this small application that allows users to find the names of players in legendary matches, using a system of points and jokers",
+                date: "December 2023",
             },
             10: {
                 title: "Portfolio Sophie Bluel",

@@ -3,7 +3,7 @@
     "frontProject": [
       {
         "image":"https://Anthony63000.github.io/Portfolio/image/Site/Accueuil.png",
-        "altText": "Image de la page d'accueuil du site Kasa2"
+        "altText": "Image de la page d'accueil du site Kasa"
       },
       {
         "image":"https://Anthony63000.github.io/Portfolio/image/Site/Apropos.png",
@@ -144,20 +144,16 @@
       {
         "id": 9,
         "category": "React",
-        "link": "",
-        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/ToDoList/todo.webp",
-        "logo":"https://anthony63000.github.io/Portfolio/image/logo/logotodo.webp",
-        "textAltImage": "Image du projet To Do List",
+        "link": "https://epopee-des-compos.anthodev.fr/",
+        "image": "https://anthony63000.github.io/Portfolio/image/portfolio/epopee/compos.webp",
+        "textAltImage": "Image du projet époée des compos",
         "stacks": [
-          "React", "Sass", "Redux", "NodeJs", "Express", "MongoDB"
+          "React", "Sass", "Redux"
        ],
        "stackLogo": [
           "https://anthony63000.github.io/Portfolio/image/stack/react-2.svg",
           "https://anthony63000.github.io/Portfolio/image/stack/sass-1.svg",
-          "https://anthony63000.github.io/Portfolio/image/stack/redux-logo.svg",
-          "https://anthony63000.github.io/Portfolio/image/stack/nodejs-1.svg",
-          "https://anthony63000.github.io/Portfolio/image/stack/express-109.svg",
-          "https://anthony63000.github.io/Portfolio/image/stack/mongodb-icon-2.svg"
+          "https://anthony63000.github.io/Portfolio/image/stack/redux-logo.svg"
       ]
       },
       {
